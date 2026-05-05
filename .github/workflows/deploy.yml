@@ -10,22 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🚚 Scarica il codice
+      - name: Download del codice sorgente
         uses: actions/checkout@v4
 
-      - name: 📦 Setup Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
 
-      - name: 📥 Installa le dipendenze
+      - name: Installazione delle dipendenze
         run: npm ci
 
-      - name: 🛠️ Compila il progetto con Vite
+      - name: Compilazione del progetto con Vite
         run: npm run build
 
-      - name: 🚀 Carica via FTP
+      - name: Caricamento via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
