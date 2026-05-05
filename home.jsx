@@ -40,6 +40,7 @@ const Home = () => {
       cities: ['Bergamo', 'Como', 'Lecco', 'Monza B.', 'Sondrio', 'Varese'],
       clubs: 24,
       soci: 487,
+      page: 'distretti/2042.html',
       sito: 'https://www.distrettorotaract2042.it/',
       ig: 'https://www.instagram.com/rotaract2042/',
     },
@@ -291,7 +292,7 @@ const Home = () => {
           <h2 className="vb-mappa-title">UNA REGIONE.<br/>TRE DISTRETTI.</h2>
         </div>
         <div className="vb-mappa-wrap">
-          <img src="Lombardia%20MDIO.svg" alt="Mappa Lombardia MDIO" className="vb-mappa-svg" />
+          <img src="assets/Lombardia%20MDIO.svg" alt="Mappa Lombardia MDIO" className="vb-mappa-svg" />
           <div className="vb-mappa-legend">
             <div className="vb-leg-item"><span style={{background:'#c8174a'}} />2041 — Milano M.</div>
             <div className="vb-leg-item"><span style={{background:'#1a3d8f'}} />2042 — Centro/Nord</div>

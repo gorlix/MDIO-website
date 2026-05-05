@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '../globals.css';
+import '../home.css';
 import './2050.css';
 import Countdown from '../components/Countdown';
 import Footer from '../components/Footer';
