@@ -229,7 +229,7 @@
 }
 .vb-btn-block:hover {
   background: transparent;
-  color: var(--cranberry);
+  color: #fff;
   transform: translateY(-3px);
 }
 

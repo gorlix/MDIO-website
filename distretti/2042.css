@@ -6,7 +6,7 @@
 .d-root .vb-event-star { color: #7eb7ff; }
 .d-root .vb-event-emph { color: #7eb7ff; }
 .d-root .vb-btn-block { background: #1a3d8f; border-color: #1a3d8f; }
-.d-root .vb-btn-block:hover { color: #1a3d8f; background: transparent; }
+.d-root .vb-btn-block:hover { color: #fff; background: transparent; border-color: rgba(255,255,255,0.55); }
 
 /* ─── HERO ─────────────────────────────────── */
 .d-hero {
@@ -114,7 +114,7 @@
   align-items: center;
   gap: 8px;
 }
-.d-btn-ghost:hover { color: #7eb7ff; border-color: #7eb7ff; }
+.d-btn-ghost:hover { color: #fff; border-color: rgba(255,255,255,0.8); }
 .d-hero-img {
   overflow: hidden;
   border-left: 2px solid rgba(255,255,255,0.15);

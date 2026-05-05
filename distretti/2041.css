@@ -6,7 +6,7 @@
 .d-root .vb-event-star { color: #ffd54a; }
 .d-root .vb-event-emph { color: #ffd54a; }
 .d-root .vb-btn-block { background: #c8174a; border-color: #c8174a; }
-.d-root .vb-btn-block:hover { color: #c8174a; background: transparent; }
+.d-root .vb-btn-block:hover { color: #fff; background: transparent; }
 
 /* ─── HERO ─────────────────────────────────── */
 .d-hero {
