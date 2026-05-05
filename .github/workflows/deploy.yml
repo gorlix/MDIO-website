@@ -1,0 +1,39 @@
+name: Deploy to FTP
+
+on:
+  push:
+    branches:
+      - main # Esegue la action solo quando modifichi il branch main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Scarica il codice
+        uses: actions/checkout@v4
+
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: 📥 Installa le dipendenze
+        run: npm ci
+
+      - name: 🛠️ Compila il progetto con Vite
+        run: npm run build
+
+      - name: 🚀 Carica via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/ # La cartella appena compilata da caricare
+          server-dir: /public_html/ # ⚠️ CAMBIA QUESTO con la cartella del tuo hosting (es. /htdocs/ o /www/) se necessario
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
