@@ -24,7 +24,7 @@ const AperturaNazionale = () => {
       sub: 'Serata di apertura',
       tag: 'Mille e una Notte',
       date: 'Ven 19 Set',
-      img: 'assets/img-9.jpeg',
+      img: 'assets/2041-05-Milano.jpeg',
       color: 'cranberry',
       bullets: [
         'Locale "Mille e una Notte" — danzatrici, hennè, profumi orientali',
@@ -51,7 +51,7 @@ const AperturaNazionale = () => {
       sub: 'Evento principale',
       tag: 'Gala all\'Autodromo',
       date: 'Sab 20 Set',
-      img: 'assets/img-13.jpeg',
+      img: 'assets/2042-13-Monza.jpeg',
       color: 'royal',
       featured: true,
       bullets: [
@@ -80,7 +80,7 @@ const AperturaNazionale = () => {
       sub: 'Lavori & conviviale',
       tag: 'Chiusura sul Lago',
       date: 'Dom 21 Set',
-      img: 'assets/img-11.jpeg',
+      img: 'assets/2050-10-Brescia.jpeg',
       color: 'gold',
       bullets: [
         'Sessione ufficiale + passaggio di consegne distrettuali',
@@ -169,9 +169,9 @@ const AperturaNazionale = () => {
 
           <div className="an-hero-right">
             <div className="an-hero-imagewrap">
-              <img src="assets/img-9.jpeg" alt="" className="an-hero-img an-hero-img-1" />
-              <img src="assets/img-13.jpeg" alt="" className="an-hero-img an-hero-img-2" />
-              <img src="assets/img-11.jpeg" alt="" className="an-hero-img an-hero-img-3" />
+              <img src="assets/2041-05-Milano.jpeg" alt="" className="an-hero-img an-hero-img-1" />
+              <img src="assets/2042-13-Monza.jpeg" alt="" className="an-hero-img an-hero-img-2" />
+              <img src="assets/2050-10-Brescia.jpeg" alt="" className="an-hero-img an-hero-img-3" />
               <div className="an-hero-cit-tag an-hero-cit-tag-1">
                 <span>GIORNO 01</span>
                 <span>Milano</span>

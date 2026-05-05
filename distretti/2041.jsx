@@ -148,7 +148,7 @@ const Distretto2041 = () => {
             </div>
           </div>
           <div className="d-hero-img">
-            <img src="../assets/img-9.jpeg" alt="Distretto Rotaract 2041 — Milano" />
+            <img src="../assets/2041-05-Milano.jpeg" alt="Distretto Rotaract 2041 — Milano" />
           </div>
         </div>
       </section>

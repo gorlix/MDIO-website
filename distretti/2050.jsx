@@ -8,6 +8,14 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 const Distretto2050 = () => {
   const [zoneHover, setZoneHover] = React.useState(null);
+  const [heroImg] = React.useState(() => {
+    const imgs = [
+      '../assets/2050-07-Piacenza.jpeg', '../assets/2050-08-Pavia.jpeg',
+      '../assets/2050-09-Lodi.jpeg', '../assets/2050-10-Brescia.jpeg',
+      '../assets/2050-11-Cremona.jpeg', '../assets/2050-12-Mantova.jpeg',
+    ];
+    return imgs[Math.floor(Math.random() * imgs.length)];
+  });
 
   const zones = [
     {
@@ -149,7 +157,7 @@ const Distretto2050 = () => {
             </div>
           </div>
           <div className="d-hero-img">
-            <img src="../assets/img-11.jpeg" alt="Distretto Rotaract 2050" />
+            <img src={heroImg} alt="Distretto Rotaract 2050" />
           </div>
         </div>
       </section>

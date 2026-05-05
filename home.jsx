@@ -9,12 +9,26 @@ import Header from './components/Header';
 const Home = () => {
   const [hover, setHover] = React.useState(null);
 
+  const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
+  const [districtImgs] = React.useState(() => ({
+    img2042: pick([
+      'assets/2042-01-Lecco.jpeg', 'assets/2042-02-Bergamo.jpeg',
+      'assets/2042-03-Sondrio.jpeg', 'assets/2042-04-Como.jpeg',
+      'assets/2042-06-Varese.jpeg', 'assets/2042-13-Monza.jpeg',
+    ]),
+    img2050: pick([
+      'assets/2050-07-Piacenza.jpeg', 'assets/2050-08-Pavia.jpeg',
+      'assets/2050-09-Lodi.jpeg', 'assets/2050-10-Brescia.jpeg',
+      'assets/2050-11-Cremona.jpeg', 'assets/2050-12-Mantova.jpeg',
+    ]),
+  }));
+
   const districts = [
     {
       n: '2041',
       city: 'Area Metropolitana di Milano',
       sub: 'Il cuore metropolitano',
-      img: 'assets/img-9.jpeg',
+      img: 'assets/2041-05-Milano.jpeg',
       bg: '#c8174a',
       fg: '#ffffff',
       accent: '#ffd54a',
@@ -31,7 +45,7 @@ const Home = () => {
       n: '2042',
       city: 'Lombardia Centro & Nord',
       sub: 'Tra laghi, valli e città d\'arte',
-      img: 'assets/img-13.jpeg',
+      img: districtImgs.img2042,
       bg: '#1a3d8f',
       fg: '#ffffff',
       accent: '#7eb7ff',
@@ -48,7 +62,7 @@ const Home = () => {
       n: '2050',
       city: 'Lombardia Sud & Piacenza',
       sub: 'Quattro macro-zone, una pianura',
-      img: 'assets/img-11.jpeg',
+      img: districtImgs.img2050,
       bg: '#e8a93a',
       fg: '#1a1a1a',
       accent: '#a4174c',
