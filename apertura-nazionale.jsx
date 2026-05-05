@@ -134,7 +134,7 @@ const AperturaNazionale = () => {
         ctaText="Iscriviti ora"
         ctaLink="#pacchetti"
       >
-        <a href="./index.html">← MDIO</a>
+        <a href="./index.html" onClick={(e) => { if (window.history.length > 1) { e.preventDefault(); window.history.back(); } }}>← MDIO</a>
         <a href="#programma">Programma</a>
         <a href="#pacchetti">Pacchetti</a>
         <a href="#info">Info pratiche</a>

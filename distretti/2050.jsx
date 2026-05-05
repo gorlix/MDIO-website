@@ -99,7 +99,7 @@ const Distretto2050 = () => {
         ctaText="Apertura Nazionale 2026 →"
         ctaLink="../apertura-nazionale.html"
       >
-        <a href="../index.html">← MDIO</a>
+        <a href="../index.html" onClick={(e) => { if (window.history.length > 1) { e.preventDefault(); window.history.back(); } }}>← MDIO</a>
         <a href="#identita">Identità</a>
         <a href="#numeri">Numeri</a>
         <a href="#zone">Zone</a>
@@ -191,6 +191,9 @@ const Distretto2050 = () => {
             </p>
             <p>
               Visitare il 2050 significa immergersi in una Fellowship genuina e calorosa. Che si tratti di un aperitivo in Piazza della Loggia a Brescia, di una visita ai palazzi ducali di Mantova o di una cena a base di eccellenze culinarie locali a Piacenza o Cremona, l'accoglienza è sempre il nostro marchio di fabbrica.
+            </p>
+            <p className="d-founding">
+              Dal 1968 serviamo al di sopra di ogni interesse personale. Il Distretto Rotaract 2050 riunisce 21 Club Rotaract delle Province di Cremona, Brescia, Lodi, Mantova, Pavia, Piacenza e alcuni Comuni della Città Metropolitana di Milano.
             </p>
           </div>
           <div className="vb-pillars">

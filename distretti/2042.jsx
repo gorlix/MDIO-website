@@ -106,7 +106,7 @@ const Distretto2042 = () => {
         ctaText="Apertura Nazionale 2026 →"
         ctaLink="../apertura-nazionale.html"
       >
-        <a href="../index.html">← MDIO</a>
+        <a href="../index.html" onClick={(e) => { if (window.history.length > 1) { e.preventDefault(); window.history.back(); } }}>← MDIO</a>
         <a href="#identita">Identità</a>
         <a href="#numeri">Numeri</a>
         <a href="#aree">Aree</a>
@@ -195,6 +195,9 @@ const Distretto2042 = () => {
             </p>
             <p>
               Visitare il 2042 significa scoprire una Fellowship autentica, vissuta a stretto contatto con il territorio e la natura. Dai weekend in baita alle gite in barca sul Lago di Como o Maggiore, fino alle degustazioni dei prodotti tipici locali, il senso di appartenenza qui è profondo e indissolubilmente legato alla bellezza dei luoghi.
+            </p>
+            <p className="d-founding">
+              Dal 1968 serviamo al di sopra di ogni interesse personale. Il Distretto Rotaract 2042 riunisce 24 Club Rotaract nelle province di Bergamo, Como, Lecco, Monza e Brianza, Sondrio e Varese.
             </p>
           </div>
           <div className="vb-pillars">

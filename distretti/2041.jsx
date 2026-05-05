@@ -24,7 +24,7 @@ const Distretto2041 = () => {
       name: 'SOLIDARIETÀ',
       prov: 'Terzo settore · Periferie · Inclusione',
       desc: 'Partnership storiche con Opera San Francesco, Pane Quotidiano, City Angels. Milano non lascia indietro nessuno — e noi siamo in prima linea.',
-      bg: '#7a1034',
+      bg: '#0e0e0e',
       fg: '#fff',
     },
     {
@@ -98,7 +98,7 @@ const Distretto2041 = () => {
         ctaText="Apertura Nazionale 2026 →"
         ctaLink="../apertura-nazionale.html"
       >
-        <a href="../index.html">← MDIO</a>
+        <a href="../index.html" onClick={(e) => { if (window.history.length > 1) { e.preventDefault(); window.history.back(); } }}>← MDIO</a>
         <a href="#identita">Identità</a>
         <a href="#numeri">Numeri</a>
         <a href="#focus">Focus</a>
@@ -193,6 +193,9 @@ const Distretto2041 = () => {
             </p>
             <p>
               Milano è una città che non si ferma mai: il Distretto Rotaract 2041 ne incarna pienamente lo spirito, unendo energia, innovazione e impegno concreto al servizio della comunità.
+            </p>
+            <p className="d-founding">
+              Dal 1968 serviamo al di sopra di ogni interesse personale. Il Distretto Rotaract 2041 riunisce 18 Club Rotaract nell'Area Metropolitana di Milano.
             </p>
           </div>
           <div className="vb-pillars">

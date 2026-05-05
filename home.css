@@ -302,6 +302,15 @@
   margin-bottom: 64px;
 }
 .vb-manifesto-body p { margin: 0 0 16px; text-wrap: pretty; }
+.d-founding {
+  margin-top: 12px;
+  padding-top: 24px;
+  border-top: 1.5px solid currentColor;
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+  font-weight: 400;
+  opacity: 0.6;
+}
 .vb-manifesto-lede {
   font-size: 24px !important;
   line-height: 1.4 !important;
