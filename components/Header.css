@@ -1,0 +1,102 @@
+/* HEADER SHARED COMPONENTS */
+.mdio-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.mdio-header-inner {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 14px 32px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 32px;
+}
+.mdio-logo {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.mdio-logo img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+}
+.mdio-logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.mdio-logo-text span:first-child {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+}
+.mdio-logo-text span:last-child {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-top: 4px;
+  opacity: 0.85;
+}
+.mdio-nav {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.mdio-nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.mdio-cta-pill {
+  background: var(--ink);
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: 2px solid var(--ink);
+  transition: transform 0.2s;
+}
+.mdio-cta-pill:hover { transform: translateY(-2px); }
+
+/* RESPONSIVE */
+@media (max-width: 1023px) {
+  .mdio-header-inner {
+    padding: 14px 16px;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mdio-header-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 10px;
+  }
+  .mdio-logo { flex: 1; }
+  .mdio-nav {
+    order: 3;
+    flex: 0 0 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 20px;
+    font-size: 12px;
+    padding: 8px 0 6px;
+    border-top: 1px solid rgba(255,255,255,0.25);
+  }
+  .mdio-nav::-webkit-scrollbar { display: none; }
+  .mdio-cta-pill { font-size: 11px; padding: 8px 16px; }
+}

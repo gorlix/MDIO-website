@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './globals.css';
 import './apertura-nazionale.css';
 import Countdown from './components/Countdown';
-
-/* Apertura Nazionale 2026 — stile editoriale coerente con la home */
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 const AperturaNazionale = () => {
   const [openFaq, setOpenFaq] = React.useState(-1);
@@ -128,21 +128,18 @@ const AperturaNazionale = () => {
   return (
     <div className="an-root">
       {/* HEADER */}
-      <header className="an-header">
-        <div className="an-header-inner">
-          <div className="an-logo">
-            <img src="assets/logo-mdio.jpeg" alt="MDIO" />
-          </div>
-          <nav className="an-nav">
-            <a href="#programma">Programma</a>
-            <a href="#pacchetti">Pacchetti</a>
-            <a href="#info">Info pratiche</a>
-            <a href="#faq">FAQ</a>
-            <a href="./index.html">← Home MDIO</a>
-          </nav>
-          <a href="#pacchetti" className="an-cta-pill">Iscriviti ora</a>
-        </div>
-      </header>
+      <Header
+        homeLink="./index.html"
+        logoPath="assets/logo-mdio.jpeg"
+        ctaText="Iscriviti ora"
+        ctaLink="#pacchetti"
+      >
+        <a href="./index.html">← MDIO</a>
+        <a href="#programma">Programma</a>
+        <a href="#pacchetti">Pacchetti</a>
+        <a href="#info">Info pratiche</a>
+        <a href="#faq">FAQ</a>
+      </Header>
 
       {/* HERO */}
       <section className="an-hero">
@@ -196,7 +193,7 @@ const AperturaNazionale = () => {
       <section className="an-countdown">
         <div className="an-countdown-inner">
           <div className="an-countdown-label">
-            Manca poco<br />all'apertura<br /><em style={{color:'#fff', fontStyle:'normal'}}>nazionale</em>
+            Manca poco<br />all'apertura<br /><em style={{ color: '#fff', fontStyle: 'normal' }}>nazionale</em>
           </div>
           <div className="an-countdown-numbers">
             <Countdown />
@@ -333,7 +330,7 @@ const AperturaNazionale = () => {
             <div className="an-pack-dates">20 SET · GALA</div>
             <h3 className="an-pack-name">Solo <em>Monza</em></h3>
             <div className="an-pack-tag">Gala all'Autodromo</div>
-            <div className="an-pack-price">€75<span style={{fontSize:'18px',color:'#6b665b',fontFamily:'Inter'}}> +IVA</span></div>
+            <div className="an-pack-price">€75<span style={{ fontSize: '18px', color: '#6b665b', fontFamily: 'Inter' }}> +IVA</span></div>
             <div className="an-pack-price-sub">cena gala · vino senza limiti</div>
             <ul className="an-pack-includes">
               <li>Tour pista in bus + podio</li>
@@ -398,7 +395,7 @@ const AperturaNazionale = () => {
           {faq.map((f, i) => (
             <div key={i} className={`an-faq-item ${openFaq === i ? '' : 'closed'}`}>
               <div className="an-faq-q" onClick={() => setOpenFaq(openFaq === i ? -1 : i)}>
-                <span><em>{String(i+1).padStart(2,'0')}.</em>&nbsp;&nbsp;{f.q}</span>
+                <span><em>{String(i + 1).padStart(2, '0')}.</em>&nbsp;&nbsp;{f.q}</span>
                 <span className="an-faq-q-toggle">{openFaq === i ? '−' : '+'}</span>
               </div>
               <div className="an-faq-a">{f.a}</div>
@@ -423,43 +420,7 @@ const AperturaNazionale = () => {
       </section>
 
       {/* FOOTER */}
-      <footer className="an-footer">
-        <div className="an-footer-grid">
-          <div>
-            <div className="an-footer-logo">MDIO</div>
-            <p className="an-footer-tag">
-              Multidistretto Italia Ovest<br />
-              Lombardia & Provincia di Piacenza<br />
-              Distretti 2041 · 2042 · 2050
-            </p>
-          </div>
-          <div>
-            <div className="an-footer-h">Apertura 2026</div>
-            <a href="#programma">Programma</a>
-            <a href="#pacchetti">Pacchetti</a>
-            <a href="#info">Info pratiche</a>
-            <a href="#faq">FAQ</a>
-          </div>
-          <div>
-            <div className="an-footer-h">MDIO</div>
-            <a href="./index.html">Home</a>
-            <a href="#">Distretti</a>
-            <a href="#">News</a>
-            <a href="#">Contatti</a>
-          </div>
-          <div>
-            <div className="an-footer-h">Seguici</div>
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">apertura@mdio-rotaract.it</a>
-          </div>
-        </div>
-        <div className="an-footer-bottom">
-          <span>© 2026 MDIO Rotaract</span>
-          <span>Apertura Nazionale 2026 · A.R. 2026—2027</span>
-        </div>
-      </footer>
+      <Footer bgColor="var(--paper-2)" textColor="var(--ink)" borderTop="1.5px solid var(--ink)" />
 
       {/* MODAL */}
       {openModal && (() => {

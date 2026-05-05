@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import '../globals.css';
 import './2042.css';
 import Countdown from '../components/Countdown';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 const Distretto2042 = () => {
   const [zoneHover, setZoneHover] = React.useState(null);
@@ -97,28 +99,19 @@ const Distretto2042 = () => {
     <div className="vb-root d-root">
 
       {/* ── HEADER ──────────────────────────────── */}
-      <header className="vb-header">
-        <div className="vb-header-inner">
-          <a href="../index.html" className="vb-logo">
-            <img src="../assets/logo-mdio.jpeg" alt="MDIO" />
-            <div className="vb-logo-text">
-              <span>MDIO</span>
-              <span>Lombardia &amp; Piacenza</span>
-            </div>
-          </a>
-          <nav className="vb-nav">
-            <a href="../index.html">← MDIO</a>
-            <a href="#identita">Identità</a>
-            <a href="#numeri">Numeri</a>
-            <a href="#aree">Aree</a>
-            <a href="#storia">Storia</a>
-            <a href="#service">Service</a>
-          </nav>
-          <a href="../apertura-nazionale.html" className="vb-cta-pill">
-            Apertura Nazionale 2026 →
-          </a>
-        </div>
-      </header>
+      <Header 
+        homeLink="../index.html" 
+        logoPath="../assets/logo-mdio.jpeg"
+        ctaText="Apertura Nazionale 2026 →"
+        ctaLink="../apertura-nazionale.html"
+      >
+        <a href="../index.html">← MDIO</a>
+        <a href="#identita">Identità</a>
+        <a href="#numeri">Numeri</a>
+        <a href="#aree">Aree</a>
+        <a href="#storia">Storia</a>
+        <a href="#service">Service</a>
+      </Header>
 
       {/* ── HERO ────────────────────────────────── */}
       <section className="d-hero">
@@ -379,41 +372,7 @@ const Distretto2042 = () => {
       </section>
 
       {/* ── FOOTER ──────────────────────────────── */}
-      <footer className="vb-footer">
-        <div className="vb-footer-big">
-          MDIO<br />
-          <span>LOMBARDIA &amp; PIACENZA</span>
-        </div>
-        <div className="vb-footer-grid">
-          <div>
-            <div className="vb-fh">DISTRETTI</div>
-            <a href="../distretti/2041.html">2041 — Milano</a>
-            <a href="../distretti/2042.html">2042 — Centro/Nord</a>
-            <a href="../distretti/2050.html">2050 — Sud + PC</a>
-          </div>
-          <div>
-            <div className="vb-fh">EVENTI</div>
-            <a href="../apertura-nazionale.html">Apertura Naz. 2026</a>
-            <a href="#">Calendario</a>
-            <a href="#">Formazione</a>
-          </div>
-          <div>
-            <div className="vb-fh">SOCIAL</div>
-            <a href="https://www.instagram.com/rotaract2042/" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">LinkedIn</a>
-          </div>
-          <div>
-            <div className="vb-fh">CONTATTI</div>
-            <a href="mailto:info@distrettorotaract2042.it">info@distrettorotaract2042.it</a>
-            <a href="https://www.distrettorotaract2042.it/" target="_blank" rel="noopener noreferrer">Sito ufficiale</a>
-          </div>
-        </div>
-        <div className="vb-footer-bottom">
-          <span>© 2026 MDIO ROTARACT · A.R. 26—27</span>
-          <span>DISTRETTO 2042 · 6 PROVINCE · LOMBARDIA CENTRO &amp; NORD</span>
-        </div>
-      </footer>
+      <Footer />
 
     </div>
   );

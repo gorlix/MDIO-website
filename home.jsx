@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './globals.css';
 import './home.css';
 import Countdown from './components/Countdown';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 const Home = () => {
   const [hover, setHover] = React.useState(null);
@@ -63,25 +65,18 @@ const Home = () => {
   return (
     <div className="vb-root">
       {/* HEADER */}
-      <header className="vb-header">
-        <div className="vb-header-inner">
-          <div className="vb-logo">
-            <img src="assets/logo-mdio.jpeg" alt="MDIO" />
-            <div className="vb-logo-text">
-              <span>MDIO</span>
-              <span>Lombardia &amp; Piacenza</span>
-            </div>
-          </div>
-          <nav className="vb-nav">
-            <a href="#manifesto">Chi siamo</a>
-            <a href="#distretti">Distretti</a>
-            <a href="#numeri">Numeri</a>
-            <a href="#mappa">Territorio</a>
-            <a href="#">News ▾</a>
-          </nav>
-          <a href="./apertura-nazionale.html" className="vb-cta-pill">Apertura Nazionale 2026 →</a>
-        </div>
-      </header>
+      <Header 
+        homeLink="./index.html" 
+        logoPath="assets/logo-mdio.jpeg"
+        ctaText="Apertura Nazionale 2026 →"
+        ctaLink="./apertura-nazionale.html"
+      >
+        <a href="#manifesto">Chi siamo</a>
+        <a href="#distretti">Distretti</a>
+        <a href="#numeri">Numeri</a>
+        <a href="#mappa">Territorio</a>
+        <a href="#">News ▾</a>
+      </Header>
 
       {/* HERO — TRE BLOCCHI */}
       <section className="vb-hero">
@@ -306,42 +301,7 @@ const Home = () => {
       </section>
 
       {/* FOOTER */}
-      <footer className="vb-footer">
-        <div className="vb-footer-big">
-          MDIO<br />
-          <span>LOMBARDIA & PIACENZA</span>
-        </div>
-        <div className="vb-footer-grid">
-          <div>
-            <div className="vb-fh">DISTRETTI</div>
-            <a href="./distretti/2041.html">2041 — Milano</a>
-            <a href="./distretti/2042.html">2042 — Centro/Nord</a>
-            <a href="./distretti/2050.html">2050 — Sud + PC</a>
-          </div>
-          <div>
-            <div className="vb-fh">EVENTI</div>
-            <a href="./apertura-nazionale.html">Apertura Naz. 2026</a>
-            <a href="#">Calendario</a>
-            <a href="#">Formazione</a>
-          </div>
-          <div>
-            <div className="vb-fh">SOCIAL</div>
-            <a href="https://www.instagram.com/multidistrettolombardo/">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">LinkedIn</a>
-          </div>
-          <div>
-            <div className="vb-fh">CONTATTI</div>
-            <a href="mailto:segreteria@rotarat2050.org">segreteria@rotarat2050.org</a>
-            <a href="#">Press kit</a>
-          </div>
-        </div>
-        <div className="vb-footer-bottom">
-          <span>© 2026 MDIO ROTARACT · A.R. 26—27</span>
-          <span>3 DISTRETTI · 12 PROVINCE · 1 MISSIONE</span>
-          <span>Fatto con il 🤍 dal Distrtto 2050</span>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
