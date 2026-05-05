@@ -307,7 +307,7 @@
 }
 .an-day-card.featured {
   border-width: 2.5px;
-  border-color: var(--cranberry);
+  border-color: var(--royal);
 }
 .an-day-img {
   position: relative;
@@ -344,9 +344,9 @@
   letter-spacing: -0.02em;
   line-height: 1;
 }
-.an-day-card:nth-child(1) .an-day-num { background: var(--royal); }
-.an-day-card.featured .an-day-num { background: var(--cranberry); }
-.an-day-card:nth-child(3) .an-day-num { background: var(--coral); }
+.an-day-card:nth-child(1) .an-day-num { background: var(--cranberry); }
+.an-day-card.featured .an-day-num { background: var(--royal); }
+.an-day-card:nth-child(3) .an-day-num { background: var(--gold); color: var(--ink); }
 
 .an-day-date {
   position: absolute;
@@ -366,7 +366,7 @@
   position: absolute;
   top: 56px;
   right: 14px;
-  background: var(--cranberry);
+  background: var(--royal);
   color: #fff;
   padding: 5px 12px;
   border-radius: 999px;
@@ -447,8 +447,8 @@
   font-weight: 700;
   flex-shrink: 0;
 }
-.an-day-card:nth-child(1) .an-day-list li::before { color: var(--royal); }
-.an-day-card:nth-child(3) .an-day-list li::before { color: var(--coral); }
+.an-day-card.featured .an-day-list li::before { color: var(--royal); }
+.an-day-card:nth-child(3) .an-day-list li::before { color: var(--gold); }
 
 .an-day-cta {
   margin-top: auto;
@@ -461,8 +461,8 @@
   align-items: center;
   justify-content: space-between;
 }
-.an-day-card:nth-child(1) .an-day-cta { color: var(--royal); }
-.an-day-card:nth-child(3) .an-day-cta { color: var(--coral); }
+.an-day-card.featured .an-day-cta { color: var(--royal); }
+.an-day-card:nth-child(3) .an-day-cta { color: var(--gold); }
 
 /* PACCHETTI */
 .an-pacchetti {
@@ -824,7 +824,12 @@
 }
 .an-modal-header.col-royal { background: var(--royal); }
 .an-modal-header.col-cranberry { background: var(--cranberry); }
-.an-modal-header.col-coral { background: var(--coral-d); }
+.an-modal-header.col-gold { background: var(--gold); color: var(--ink); }
+.an-modal-header.col-gold .an-modal-close { border-color: rgba(20,20,20,0.5); color: var(--ink); }
+.an-modal-header.col-gold .an-modal-close:hover { background: rgba(20,20,20,0.15); }
+.an-modal-header.col-gold .an-modal-day-meta { color: rgba(20,20,20,0.7); }
+.an-modal-header.col-gold .an-modal-subtitle { color: rgba(20,20,20,0.85); }
+.an-modal-header.col-gold .an-modal-pill { background: rgba(20,20,20,0.15); color: var(--ink); border-color: rgba(20,20,20,0.3); }
 
 .an-modal-close {
   position: absolute;

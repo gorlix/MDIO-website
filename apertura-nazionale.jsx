@@ -25,7 +25,7 @@ const AperturaNazionale = () => {
       tag: 'Mille e una Notte',
       date: 'Ven 19 Set',
       img: 'assets/img-9.jpeg',
-      color: 'royal',
+      color: 'cranberry',
       bullets: [
         'Locale "Mille e una Notte" — danzatrici, hennè, profumi orientali',
         'Cena 4 portate con vino incluso (~€75)',
@@ -52,7 +52,7 @@ const AperturaNazionale = () => {
       tag: 'Gala all\'Autodromo',
       date: 'Sab 20 Set',
       img: 'assets/img-13.jpeg',
-      color: 'cranberry',
+      color: 'royal',
       featured: true,
       bullets: [
         'Cena di gala + tour della pista in bus con guida ufficiale',
@@ -81,7 +81,7 @@ const AperturaNazionale = () => {
       tag: 'Chiusura sul Lago',
       date: 'Dom 21 Set',
       img: 'assets/img-11.jpeg',
-      color: 'coral',
+      color: 'gold',
       bullets: [
         'Sessione ufficiale + passaggio di consegne distrettuali',
         'Relatore d\'eccezione (in corso di conferma)',
