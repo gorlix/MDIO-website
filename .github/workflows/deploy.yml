@@ -3,7 +3,7 @@ name: Deploy to FTP
 on:
   push:
     branches:
-      - main # Esegue la action solo quando modifichi il branch main
+      - main
 
 jobs:
   build-and-deploy:
@@ -31,8 +31,8 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/ # La cartella appena compilata da caricare
-          server-dir: /public_html/ # ⚠️ CAMBIA QUESTO con la cartella del tuo hosting (es. /htdocs/ o /www/) se necessario
+          local-dir: ./dist/
+          server-dir: /public_html/
           exclude: |
             **/.git*
             **/.git*/**
