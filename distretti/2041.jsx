@@ -183,13 +183,16 @@ const Distretto2041 = () => {
           </h2>
           <div className="vb-manifesto-body">
             <p className="vb-manifesto-lede">
-              Il Distretto 2041 coincide con <strong>l'area metropolitana di Milano</strong>, la capitale economica, del design e dell'innovazione in Italia. È un distretto dall'energia inesauribile, dove i ritmi veloci della città si fondono con una fortissima vocazione al servizio.
+              Il Distretto Rotaract 2041 coincide con <strong>l'area metropolitana di Milano</strong>, capitale economica, del design e dell'innovazione in Italia. È l'unico distretto interamente metropolitano del Paese, caratterizzato da un contesto dinamico, internazionale e in continua evoluzione.
             </p>
             <p>
-              I club del 2041 sono veri e propri incubatori di idee, dove studenti provenienti dai più prestigiosi atenei italiani e giovani professionisti di ogni settore si incontrano per creare progetti ad alto impatto.
+              In questo ambiente altamente connesso, i Rotaract Club del 2041 rappresentano veri e propri centri di progettazione e sviluppo: studenti provenienti da università di eccellenza e giovani professionisti di diversi settori collaborano per ideare e realizzare service ad alto impatto sul territorio e oltre.
             </p>
             <p>
-              Visitare il 2041 significa respirare un'aria profondamente europea. La Fellowship qui vive di aperitivi di networking dopo il lavoro, grandi eventi di gala in location storiche e incontri stimolanti. Milano è una città che non si ferma mai, e il suo Distretto Rotaract ne è lo specchio perfetto.
+              La forte vocazione europea e internazionale del distretto si riflette anche nella sua Fellowship, fatta di momenti di networking, eventi di rilievo e occasioni di confronto che favoriscono la crescita personale e professionale dei soci.
+            </p>
+            <p>
+              Milano è una città che non si ferma mai: il Distretto Rotaract 2041 ne incarna pienamente lo spirito, unendo energia, innovazione e impegno concreto al servizio della comunità.
             </p>
           </div>
           <div className="vb-pillars">
