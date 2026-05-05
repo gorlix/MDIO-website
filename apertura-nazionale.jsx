@@ -1,28 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './globals.css';
+import './apertura-nazionale.css';
+import Countdown from './components/Countdown';
 
 /* Apertura Nazionale 2026 — stile editoriale coerente con la home */
 
 const AperturaNazionale = () => {
-  const [countdown, setCountdown] = React.useState({ d: 129, h: 13, m: 40, s: 31 });
-  const [openFaq, setOpenFaq] = React.useState(0);
+  const [openFaq, setOpenFaq] = React.useState(-1);
   const [openModal, setOpenModal] = React.useState(null);
-
-  React.useEffect(() => {
-    const target = new Date('2026-09-18T18:00:00').getTime();
-    const tick = () => {
-      const now = Date.now();
-      const diff = Math.max(0, target - now);
-      const d = Math.floor(diff / 86400000);
-      const h = Math.floor((diff % 86400000) / 3600000);
-      const m = Math.floor((diff % 3600000) / 60000);
-      const s = Math.floor((diff % 60000) / 1000);
-      setCountdown({ d, h, m, s });
-    };
-    tick();
-    const id = setInterval(tick, 1000);
-    return () => clearInterval(id);
-  }, []);
 
   React.useEffect(() => {
     const onKey = (e) => { if (e.key === 'Escape') setOpenModal(null); };
@@ -213,17 +199,7 @@ const AperturaNazionale = () => {
             Manca poco<br />all'apertura<br /><em style={{color:'#fff', fontStyle:'normal'}}>nazionale</em>
           </div>
           <div className="an-countdown-numbers">
-            {[
-              { v: countdown.d, l: 'Giorni' },
-              { v: countdown.h, l: 'Ore' },
-              { v: countdown.m, l: 'Minuti' },
-              { v: countdown.s, l: 'Secondi' },
-            ].map((x, i) => (
-              <div key={i} className="an-countdown-cell">
-                <div className="an-countdown-num">{String(x.v).padStart(2, '0')}</div>
-                <div className="an-countdown-lab">{x.l}</div>
-              </div>
-            ))}
+            <Countdown />
           </div>
         </div>
       </section>

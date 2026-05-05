@@ -1,26 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import '../globals.css';
+import './2042.css';
+import Countdown from '../components/Countdown';
 
 const Distretto2042 = () => {
   const [zoneHover, setZoneHover] = React.useState(null);
-  const [countdown, setCountdown] = React.useState({ d: 0, h: 0, m: 0, s: 0 });
-
-  React.useEffect(() => {
-    const target = new Date('2026-09-18T18:00:00').getTime();
-    const tick = () => {
-      const now = Date.now();
-      const diff = Math.max(0, target - now);
-      setCountdown({
-        d: Math.floor(diff / 86400000),
-        h: Math.floor((diff % 86400000) / 3600000),
-        m: Math.floor((diff % 3600000) / 60000),
-        s: Math.floor((diff % 60000) / 1000),
-      });
-    };
-    tick();
-    const id = setInterval(tick, 1000);
-    return () => clearInterval(id);
-  }, []);
 
   const areas = [
     {
@@ -388,19 +373,7 @@ const Distretto2042 = () => {
             </a>
           </div>
           <div className="vb-event-right">
-            <div className="vb-cd-grid">
-              {[
-                { v: countdown.d, l: 'Giorni' },
-                { v: countdown.h, l: 'Ore' },
-                { v: countdown.m, l: 'Minuti' },
-                { v: countdown.s, l: 'Sec.' },
-              ].map((x, i) => (
-                <div key={i} className="vb-cd-cell">
-                  <div className="vb-cd-num">{String(x.v).padStart(2, '0')}</div>
-                  <div className="vb-cd-lab">{x.l}</div>
-                </div>
-              ))}
-            </div>
+            <Countdown />
           </div>
         </div>
       </section>

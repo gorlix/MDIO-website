@@ -1,13 +1,6 @@
 /* === Variante B — Bold Geometrico === */
 
 .vb-root {
-  --cranberry: #c8174a;
-  --cranberry-d: #a4174c;
-  --royal: #1a3d8f;
-  --gold: #e8a93a;
-  --ink: #0e0e0e;
-  --paper: #f4f1ea;
-  --line: #0e0e0e;
   font-family: 'Space Grotesk', 'Inter', sans-serif;
   background: var(--paper);
   color: var(--ink);
@@ -16,9 +9,6 @@
   font-size: 15px;
   line-height: 1.5;
 }
-.vb-root * { box-sizing: border-box; }
-.vb-root img { max-width: 100%; display: block; }
-.vb-root a { color: inherit; text-decoration: none; }
 
 /* Display headings use Archivo Black-style */
 .vb-root h1, .vb-root h2, .vb-root h3 {
