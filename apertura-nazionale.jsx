@@ -303,7 +303,7 @@ const AperturaNazionale = () => {
               <li className="muted">Hotel non incluso</li>
               <li className="muted">Sabato/Domenica esclusi</li>
             </ul>
-            <a href="#" className="an-pack-cta">Acquista il singolo</a>
+            <a href="#pacchetti" className="an-pack-cta">Acquista il singolo</a>
           </div>
 
           {/* Weekend Completo - featured */}
@@ -322,7 +322,7 @@ const AperturaNazionale = () => {
               <li>Navette incluse hotel ↔ eventi</li>
               <li>Welcome bag e gadget esclusivi</li>
             </ul>
-            <a href="#" className="an-pack-cta">Acquista il weekend</a>
+            <a href="#pacchetti" className="an-pack-cta">Acquista il weekend</a>
           </div>
 
           {/* Singolo Sabato */}
@@ -340,7 +340,7 @@ const AperturaNazionale = () => {
               <li>Navetta dall'Hotel Falcone</li>
               <li className="muted">Hotel non incluso</li>
             </ul>
-            <a href="#" className="an-pack-cta">Acquista il singolo</a>
+            <a href="#pacchetti" className="an-pack-cta">Acquista il singolo</a>
           </div>
         </div>
       </section>
@@ -463,7 +463,7 @@ const AperturaNazionale = () => {
                     ))}
                   </div>
                 </div>
-                <a href="#" className="an-mod-cta">Acquista il biglietto →</a>
+                <a href="#pacchetti" className="an-mod-cta">Acquista il biglietto →</a>
               </div>
             </div>
           </React.Fragment>

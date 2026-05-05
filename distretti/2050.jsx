@@ -330,7 +330,7 @@ const Distretto2050 = () => {
             Fare rete con il Distretto 2050 significa scoprire un'Italia autentica, operosa e ricca di tesori nascosti. Siamo pronti a trasformare rapidamente le idee in grandi progetti di servizio.
           </p>
           <div className="d-rete-actions">
-            <a href="mailto:segreteria@rotarat2050.org" className="d-btn-primary">
+            <a href="mailto:segreteria@rotaract2050.org" className="d-btn-primary">
               Contattaci →
             </a>
             <a

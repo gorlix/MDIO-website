@@ -9,6 +9,14 @@ import Header from './components/Header';
 const Home = () => {
   const [hover, setHover] = React.useState(null);
 
+  React.useEffect(() => {
+    const y = sessionStorage.getItem('home_scroll');
+    if (y) {
+      sessionStorage.removeItem('home_scroll');
+      window.scrollTo(0, parseInt(y, 10));
+    }
+  }, []);
+
   const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
   const [districtImgs] = React.useState(() => ({
     img2042: pick([
@@ -90,7 +98,7 @@ const Home = () => {
         <a href="#distretti">Distretti</a>
         <a href="#numeri">Numeri</a>
         <a href="#mappa">Territorio</a>
-        <a href="#">News ▾</a>
+        <span style={{ opacity: 0.45, cursor: 'default' }}>News ▾</span>
       </Header>
 
       {/* HERO — TRE BLOCCHI */}
@@ -284,6 +292,7 @@ const Home = () => {
                   href={d.page || d.sito}
                   {...(d.page ? {} : { target: '_blank', rel: 'noopener noreferrer' })}
                   className="vb-dist-cta-main"
+                  onClick={() => { if (d.page) sessionStorage.setItem('home_scroll', window.scrollY); }}
                 >
                   SCOPRI<br />DI PIÙ
                   <span>↗</span>

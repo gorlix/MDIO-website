@@ -19,7 +19,6 @@ const Header = ({
         <a
           href={homeLink}
           className="mdio-logo"
-          onClick={(e) => { if (window.history.length > 1) { e.preventDefault(); window.history.back(); } }}
         >
           <img src={logoPath} alt="MDIO" />
           {showLogoText && (
