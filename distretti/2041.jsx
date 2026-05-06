@@ -4,6 +4,7 @@ import '../globals.css';
 import '../home.css';
 import './2041.css';
 import Countdown from '../components/Countdown';
+import CookieBanner from '../components/CookieBanner';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 
@@ -382,6 +383,9 @@ const Distretto2041 = () => {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Distretto2041 />
+    <>
+      <Distretto2041 />
+      <CookieBanner />
+    </>
   </React.StrictMode>
 );

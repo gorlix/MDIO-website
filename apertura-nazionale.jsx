@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './globals.css';
 import './apertura-nazionale.css';
 import Countdown from './components/Countdown';
+import CookieBanner from './components/CookieBanner';
 import Footer from './components/Footer';
 import Header from './components/Header';
 
@@ -475,6 +476,9 @@ const AperturaNazionale = () => {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <AperturaNazionale />
+    <>
+      <AperturaNazionale />
+      <CookieBanner />
+    </>
   </React.StrictMode>
 );

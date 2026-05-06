@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './globals.css';
 import './gratta-vinci.css';
+import CookieBanner from './components/CookieBanner';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -153,6 +154,9 @@ const GrattaVinci = () => (
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <GrattaVinci />
+    <>
+      <GrattaVinci />
+      <CookieBanner />
+    </>
   </React.StrictMode>
 );

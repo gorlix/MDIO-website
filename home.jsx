@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './globals.css';
 import './home.css';
 import Countdown from './components/Countdown';
+import CookieBanner from './components/CookieBanner';
 import Footer from './components/Footer';
 import Header from './components/Header';
 
@@ -332,6 +333,9 @@ const Home = () => {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Home />
+    <>
+      <Home />
+      <CookieBanner />
+    </>
   </React.StrictMode>
 );
