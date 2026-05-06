@@ -128,9 +128,9 @@ const Distretto2042 = () => {
           <div className="d-hero-left">
             <div className="d-hero-eyebrow">Distretto Rotaract</div>
             <div className="d-hero-num">2042</div>
-            <div className="d-hero-title">
+            <h1 className="d-hero-title">
               Lombardia<br />Centro &amp; Nord
-            </div>
+            </h1>
             <p className="d-hero-claim">
               Dalle Alpi alla Brianza, una rete tra laghi,<br />
               valli e città d'arte.

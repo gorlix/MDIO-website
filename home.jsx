@@ -264,7 +264,7 @@ const Home = () => {
                 <span className="vb-dist-no-m">{d.n}</span>
               </div>
               <div className="vb-dist-img">
-                <img src={d.img} alt={d.city} />
+                <img src={d.img} alt={d.city} loading="lazy" />
                 <div className="vb-dist-overlay" />
               </div>
               <div className="vb-dist-content">
@@ -315,7 +315,7 @@ const Home = () => {
           <h2 className="vb-mappa-title">UNA REGIONE.<br/>TRE DISTRETTI.</h2>
         </div>
         <div className="vb-mappa-wrap">
-          <img src="assets/Lombardia%20MDIO.svg" alt="Mappa Lombardia MDIO" className="vb-mappa-svg" />
+          <img src="assets/Lombardia%20MDIO.svg" alt="Mappa Lombardia MDIO" className="vb-mappa-svg" loading="lazy" />
           <div className="vb-mappa-legend">
             <div className="vb-leg-item"><span style={{background:'#c8174a'}} />2041 — Milano M.</div>
             <div className="vb-leg-item"><span style={{background:'#1a3d8f'}} />2042 — Centro/Nord</div>

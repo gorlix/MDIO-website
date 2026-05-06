@@ -112,9 +112,9 @@ const Distretto2041 = () => {
           <div className="d-hero-left">
             <div className="d-hero-eyebrow">Distretto Rotaract</div>
             <div className="d-hero-num">2041</div>
-            <div className="d-hero-title">
+            <h1 className="d-hero-title">
               Area Metropolitana<br />di Milano
-            </div>
+            </h1>
             <p className="d-hero-claim">
               Dove l'energia della metropoli incontra il servizio.<br />
               Connesso, inclusivo, proiettato verso il futuro.

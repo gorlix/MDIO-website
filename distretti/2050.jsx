@@ -121,9 +121,9 @@ const Distretto2050 = () => {
           <div className="d-hero-left">
             <div className="d-hero-eyebrow">Distretto Rotaract</div>
             <div className="d-hero-num">2050</div>
-            <div className="d-hero-title">
+            <h1 className="d-hero-title">
               Lombardia Sud<br />&amp; Piacenza
-            </div>
+            </h1>
             <p className="d-hero-claim">
               Francigena, Leonessa, Navigli e Padana:<br />
               dalla Lombardia all'Emilia.
