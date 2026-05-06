@@ -60,13 +60,13 @@ Per ogni controversia relativa all'interpretazione, validità o applicazione del
 const GrattaVinci = () => (
   <div className="gv-root">
     <Header
-      homeLink="./index.html"
-      logoPath="assets/logo-mdio.jpeg"
+      homeLink="../index.html"
+      logoPath="../assets/logo-mdio.jpeg"
       ctaText="Scopri l'evento →"
-      ctaLink="./apertura-nazionale.html"
+      ctaLink="../apertura-nazionale.html"
     >
-      <a href="./index.html">← MDIO</a>
-      <a href="./apertura-nazionale.html">Apertura Nazionale</a>
+      <a href="../index.html">← MDIO</a>
+      <a href="../apertura-nazionale.html">Apertura Nazionale</a>
       <a href="#premi">Premi</a>
       <a href="#termini">Regolamento</a>
     </Header>
@@ -125,7 +125,7 @@ const GrattaVinci = () => (
     <section className="gv-cta">
       <h2 className="gv-cta-title">Vuoi partecipare all'evento?</h2>
       <p className="gv-cta-sub">Scopri il programma completo dell'Apertura Nazionale 2026.</p>
-      <a href="./apertura-nazionale.html">Vai all'Apertura Nazionale →</a>
+      <a href="../apertura-nazionale.html">Vai all'Apertura Nazionale →</a>
     </section>
 
     {/* TERMINI E CONDIZIONI */}

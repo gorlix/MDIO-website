@@ -12,7 +12,7 @@ export default defineConfig({
         distretto2041: resolve(__dirname, 'distretti/2041.html'),
         distretto2042: resolve(__dirname, 'distretti/2042.html'),
         distretto2050: resolve(__dirname, 'distretti/2050.html'),
-        grattavinci: resolve(__dirname, 'gratta-vinci.html')
+        grattavinci: resolve(__dirname, 'gratta-vinci/index.html')
       }
     }
   }
