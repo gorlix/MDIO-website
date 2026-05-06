@@ -21,8 +21,9 @@ const Distretto2050 = () => {
     {
       n: '01',
       name: 'FRANCIGENA',
-      prov: 'Pavia · Lodi',
-      desc: '— Testo descrittivo della macro-zona da aggiungere —',
+      prov: 'Piacenza · Lodi · Cremona Nord',
+      clubs: ['Codogno', 'Fiorenzuola d\'Arda', 'Lodi-Adda', 'Piacenza', 'Terre Cremasche'],
+      desc: 'Tra Lombardia ed Emilia, lungo la più antica via di pellegrinaggio.',
       bg: '#a4174c',
       fg: '#fff',
     },
@@ -30,23 +31,26 @@ const Distretto2050 = () => {
       n: '02',
       name: 'LEONESSA',
       prov: 'Brescia',
-      desc: '— Testo descrittivo della macro-zona da aggiungere —',
+      clubs: ['Brescia', 'Brescia Franciacorta', 'Brescia Ovest Castello', 'Brescia Sud-Est Montichiari', 'Brescia Veronica Gambara', 'Brescia Vittoria Alata', 'Garda Valle Sabbia', 'Valtrompia'],
+      desc: 'Sotto il manto della Leonessa d\'Italia.',
       bg: '#1a3d8f',
       fg: '#fff',
     },
     {
       n: '03',
       name: 'NAVIGLI',
-      prov: 'Cremona · Milano Sud',
-      desc: '— Testo descrittivo della macro-zona da aggiungere —',
+      prov: 'Pavia · Milano Sud',
+      clubs: ['Abbiategrasso', 'Morimondo Abbazia', 'Pavia', 'Pavia Nord', 'Pavia Terre Viscontee', 'Vigevano Castello', 'Vigevano Lomellina', 'Voghera'],
+      desc: 'Nel cuore della Langombardia Maior.',
       bg: '#2a6b4a',
       fg: '#fff',
     },
     {
       n: '04',
       name: 'PADANA',
-      prov: 'Mantova · Piacenza',
-      desc: '— Testo descrittivo della macro-zona da aggiungere —',
+      prov: 'Cremona · Mantova',
+      clubs: ['Andes Di Virgilio-Curtatone', 'Casalmaggiore-Viadana-Sabbioneta', 'Castiglione delle Stiviere e Alto Mantovano', 'Cremona', 'Gonzaga-Suzzara', 'Mantova', 'Piadena-Casalmaggiore-Asola'],
+      desc: 'In riva al Po, fra arte, storia e natura.',
       bg: '#e8a93a',
       fg: '#1a1a1a',
     },
@@ -265,6 +269,11 @@ const Distretto2050 = () => {
                 <div className="d-zone-num">{z.n}</div>
                 <div className="d-zone-name">{z.name}</div>
                 <div className="d-zone-prov">{z.prov}</div>
+              </div>
+              <div className="d-zone-clubs">
+                {z.clubs.map((c) => (
+                  <span key={c} className="d-zone-club">{c}</span>
+                ))}
               </div>
               <div className="d-zone-desc">{z.desc}</div>
             </div>
