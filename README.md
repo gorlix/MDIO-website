@@ -1,7 +1,7 @@
 # MDIO Rotaract · Multidistretto Italia Ovest
 
 <div align="center">
-  <img src="assets/Logo-MDIO.jpeg" alt="Logo MDIO" width="120" style="border-radius: 50%;" />
+  <img src="public/assets/Logo-MDIO.jpeg" alt="Logo MDIO" width="120" style="border-radius: 50%;" />
   <h3>Lombardia & Provincia di Piacenza</h3>
   <p><strong>Distretti 2041 · 2042 · 2050</strong></p>
 </div>
