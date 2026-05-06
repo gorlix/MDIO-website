@@ -1,0 +1,32 @@
+# MDIO — Multidistretto Rotaract Italia Ovest
+
+> Coordinamento alla pari di tre distretti Rotaract in Lombardia e Provincia di Piacenza.
+> 73 club · 1.497 soci attivi under 30 · 12 province · 180+ service all'anno · Fondato nel 1968.
+
+Il MDIO (Multidistretto Italia Ovest) unisce i distretti Rotaract 2041, 2042 e 2050 in un modello di coordinamento orizzontale: nessuno guida, tutti contribuiscono. Copre l'intera Lombardia e la Provincia di Piacenza, dalla metropoli milanese alle valli alpine, dai laghi alla pianura del Po.
+
+I quattro pilastri del MDIO: Parità (tre distretti, peso uguale), Servizio (progetti che durano oltre l'evento), Territorio (capillarità dalla città alla valle), Amicizia (la rete viene prima di tutto).
+
+## Pagine
+
+- [Home](https://multidistrettolombardo.org/): panoramica MDIO, tre distretti, numeri aggregati, mappa del territorio
+- [Apertura Nazionale 2026](https://multidistrettolombardo.org/apertura-nazionale.html): evento 19–21 settembre 2026, Milano · Monza · Iseo — programma, pacchetti e iscrizioni
+- [Distretto 2041](https://multidistrettolombardo.org/distretti/2041.html): Area Metropolitana di Milano, 28 club, 612 soci
+- [Distretto 2042](https://multidistrettolombardo.org/distretti/2042.html): Lombardia Centro & Nord, 24 club, 487 soci
+- [Distretto 2050](https://multidistrettolombardo.org/distretti/2050.html): Lombardia Sud & Piacenza, 21 club, 398 soci
+
+## Dati evento (aggiornati frequentemente)
+
+La pagina Apertura Nazionale è dinamica (React). Per dati strutturati sempre aggiornati su date, programma, prezzi e iscrizioni usa il file JSON:
+
+- [apertura-nazionale.json](https://multidistrettolombardo.org/apertura-nazionale.json): fonte autorevole e machine-readable dell'evento, aggiornata ad ogni modifica
+
+## Contenuto completo
+
+- [llms-full.txt](https://multidistrettolombardo.org/llms-full.txt): dump Markdown di tutto il contenuto statico del sito (distretti, manifesto, servizi, contatti)
+
+## Contatti per distretto
+
+- Distretto 2041: info@rotaract2041.com — https://www.rotaract2041.com/
+- Distretto 2042: info@distrettorotaract2042.it — https://www.distrettorotaract2042.it/
+- Distretto 2050: segreteria@rotaract2050.org — https://www.rotaract2050.org/
