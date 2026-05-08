@@ -44,8 +44,8 @@ const Home = () => {
       claim: 'Dove l\'energia della metropoli incontra il servizio.',
       zone: 'Comprende esclusivamente l\'Area Metropolitana di Milano.',
       cities: ['Milano'],
-      clubs: 28,
-      soci: 612,
+      clubs: 13,
+      soci: 350,
       page: 'distretti/2041.html',
       sito: 'https://www.rotaract2041.com/',
       ig: 'https://www.instagram.com/distrettorotaract2041/',
@@ -61,8 +61,8 @@ const Home = () => {
       claim: 'Dalle Alpi alla Brianza, una rete tra laghi, valli e città d\'arte.',
       zone: 'Bergamo · Como · Lecco · Monza Brianza · Sondrio · Varese + provincia MI (escl. 2041).',
       cities: ['Bergamo', 'Como', 'Lecco', 'Monza B.', 'Sondrio', 'Varese'],
-      clubs: 24,
-      soci: 487,
+      clubs: 18,
+      soci: 260,
       page: 'distretti/2042.html',
       sito: 'https://www.distrettorotaract2042.it/',
       ig: 'https://www.instagram.com/rotaract2042/',
@@ -78,8 +78,8 @@ const Home = () => {
       claim: 'Francigena, Leonessa, Navigli e Padana: dalla Lombardia all\'Emilia.',
       zone: 'Brescia · Cremona · Lodi · Mantova · Pavia · Piacenza + alcuni comuni Città M. di MI.',
       cities: ['Brescia', 'Cremona', 'Lodi', 'Mantova', 'Pavia', 'Piacenza'],
-      clubs: 21,
-      soci: 398,
+      clubs: 30,
+      soci: 403,
       page: 'distretti/2050.html',
       sito: 'https://www.rotaract2050.org/',
       ig: 'https://www.instagram.com/rotaract2050/',
@@ -115,7 +115,7 @@ const Home = () => {
           </h1>
           <p className="vb-hero-sub">
             Distretti <strong>2041</strong> · <strong>2042</strong> · <strong>2050</strong>{' '}
-            — completamente alla pari. 73 club, 1.497 soci.
+            — completamente alla pari. 61 club, 1.013 soci.
           </p>
         </div>
 
@@ -226,8 +226,8 @@ const Home = () => {
         </div>
         <div className="vb-numbers-grid">
           {[
-            { n: '73', l: 'CLUB', s: 'Rotaract sul territorio' },
-            { n: '1.497', l: 'SOCI', s: 'attivi under 30' },
+            { n: '61', l: 'CLUB', s: 'Rotaract sul territorio' },
+            { n: '1.013', l: 'SOCI', s: 'attivi under 30' },
             { n: '12', l: 'PROVINCE', s: 'Lombardia + Piacenza' },
             { n: '180+', l: 'SERVICE', s: 'all\'anno rotaractiano' },
           ].map((x, i) => (
@@ -249,7 +249,7 @@ const Home = () => {
           </div>
           <h2 className="vb-distretti-title">
             Tre identità.<br />
-            <span className="vb-amp">Pari dignità.</span>
+            <span className="vb-amp">Un'unica visione.</span>
           </h2>
         </div>
 

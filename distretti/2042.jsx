@@ -137,9 +137,9 @@ const Distretto2042 = () => {
               valli e città d'arte.
             </p>
             <div className="d-hero-stats">
-              <span><strong>24</strong> club</span>
+              <span><strong>18</strong> club</span>
               <span>·</span>
-              <span><strong>487</strong> soci</span>
+              <span><strong>260</strong> soci</span>
               <span>·</span>
               <span><strong>6</strong> province</span>
               <span>·</span>

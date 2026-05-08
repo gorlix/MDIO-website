@@ -24,7 +24,7 @@ const AperturaNazionale = () => {
       city: 'Milano',
       sub: 'Serata di apertura',
       tag: 'Mille e una Notte',
-      date: 'Ven 19 Set',
+      date: 'Ven 18 Set',
       img: 'assets/2041-05-Milano.jpeg',
       color: 'cranberry',
       bullets: [
@@ -51,7 +51,7 @@ const AperturaNazionale = () => {
       city: 'Monza',
       sub: 'Evento principale',
       tag: 'Gala all\'Autodromo',
-      date: 'Sab 20 Set',
+      date: 'Sab 19 Set',
       img: 'assets/2042-13-Monza.jpeg',
       color: 'royal',
       featured: true,
@@ -77,10 +77,10 @@ const AperturaNazionale = () => {
     {
       id: 'g3',
       num: '03',
-      city: 'Iseo',
+      city: 'Sale Marasino',
       sub: 'Lavori & conviviale',
       tag: 'Chiusura sul Lago',
-      date: 'Dom 21 Set',
+      date: 'Dom 20 Set',
       img: 'assets/2050-10-Brescia.jpeg',
       color: 'gold',
       bullets: [
@@ -155,12 +155,12 @@ const AperturaNazionale = () => {
               <em>Nazionale</em><br />
               2026.
             </h1>
-            <div className="an-hero-dates">19 · 20 · 21 Settembre</div>
+            <div className="an-hero-dates">18 · 19 · 20 Settembre</div>
             <p className="an-hero-lede">
               Tre giorni per aprire l'anno rotaractiano <em>tutti insieme</em>:
               {' '}<strong>Milano</strong> tra danze e profumi orientali,
               {' '}<strong>Monza</strong> al gala dell'Autodromo,
-              {' '}<strong>Iseo</strong> per i lavori e il conviviale sul lago.
+              {' '}<strong>Sale Marasino</strong> per i lavori e il conviviale sul lago.
             </p>
             <div className="an-hero-actions">
               <a href="#pacchetti" className="an-btn-primary">Scegli il pacchetto →</a>
@@ -183,7 +183,7 @@ const AperturaNazionale = () => {
               </div>
               <div className="an-hero-cit-tag an-hero-cit-tag-3">
                 <span>GIORNO 03</span>
-                <span>Iseo</span>
+                <span>Sale Marasino</span>
               </div>
             </div>
           </div>
@@ -207,7 +207,7 @@ const AperturaNazionale = () => {
         <div className="an-marquee-track">
           <span>Milano</span><span>•</span>
           <span>Monza</span><span>•</span>
-          <span>Iseo</span><span>•</span>
+          <span>Sale Marasino</span><span>•</span>
           <span>3 giorni</span><span>•</span>
           <span>14 distretti</span><span>•</span>
           <span>Mille e una Notte</span><span>•</span>
@@ -215,7 +215,7 @@ const AperturaNazionale = () => {
           <span>Lago d'Iseo</span><span>•</span>
           <span>Milano</span><span>•</span>
           <span>Monza</span><span>•</span>
-          <span>Iseo</span><span>•</span>
+          <span>Sale Marasino</span><span>•</span>
           <span>3 giorni</span><span>•</span>
         </div>
       </div>
@@ -231,7 +231,7 @@ const AperturaNazionale = () => {
             Tre città,<br /><em>tre serate</em>,<br />una sola apertura.
           </h2>
           <p className="an-programma-lede">
-            Da venerdì 19 a domenica 21 settembre 2026.
+            Da venerdì 18 a domenica 20 settembre 2026.
             {' '}Sfoglia le giornate, scopri il programma e scegli quale vivere.
           </p>
         </div>
@@ -291,7 +291,7 @@ const AperturaNazionale = () => {
         <div className="an-pack-grid">
           {/* Singolo Giorno */}
           <div className="an-pack">
-            <div className="an-pack-dates">19 SET · UN GIORNO</div>
+            <div className="an-pack-dates">18 SET · UN GIORNO</div>
             <h3 className="an-pack-name">Solo <em>Milano</em></h3>
             <div className="an-pack-tag">Serata Mille e una Notte</div>
             <div className="an-pack-price">€75</div>
@@ -328,7 +328,7 @@ const AperturaNazionale = () => {
 
           {/* Singolo Sabato */}
           <div className="an-pack">
-            <div className="an-pack-dates">20 SET · GALA</div>
+            <div className="an-pack-dates">19 SET · GALA</div>
             <h3 className="an-pack-name">Solo <em>Monza</em></h3>
             <div className="an-pack-tag">Gala all'Autodromo</div>
             <div className="an-pack-price">€75<span style={{ fontSize: '18px', color: '#6b665b', fontFamily: 'Inter' }}> +IVA</span></div>
@@ -360,7 +360,7 @@ const AperturaNazionale = () => {
         <div className="an-info-grid">
           <div className="an-info-cell">
             <div className="an-info-cell-h">→ Date</div>
-            <div className="an-info-cell-t">19—21 Settembre 2026</div>
+            <div className="an-info-cell-t">18—20 Settembre 2026</div>
             <div className="an-info-cell-d">Tre giorni: Milano, Monza, Iseo</div>
           </div>
           <div className="an-info-cell">
@@ -410,7 +410,7 @@ const AperturaNazionale = () => {
         <div className="an-cta-final-inner">
           <div className="an-cta-final-eyebrow">Non perdere il via</div>
           <h2 className="an-cta-final-title">
-            Ti aspettiamo a<br /><em>Milano, Monza e Iseo</em>.
+            Ti aspettiamo a<br /><em>Milano, Monza e Sale Marasino</em>.
           </h2>
           <p className="an-cta-final-text">
             Tre giorni per aprire l'anno rotaractiano insieme,
@@ -433,7 +433,7 @@ const AperturaNazionale = () => {
             <div className="an-modal open visible">
               <div className={`an-modal-header col-${d.color}`}>
                 <button className="an-modal-close" onClick={() => setOpenModal(null)}>✕</button>
-                <div className="an-modal-day-meta">Giorno {d.num} · {d.date === 'Ven 19 Set' ? 'Venerdì 19 Settembre' : d.date === 'Sab 20 Set' ? 'Sabato 20 Settembre' : 'Domenica 21 Settembre'}</div>
+                <div className="an-modal-day-meta">Giorno {d.num} · {d.date === 'Ven 18 Set' ? 'Venerdì 18 Settembre' : d.date === 'Sab 19 Set' ? 'Sabato 19 Settembre' : 'Domenica 20 Settembre'}</div>
                 <h3 className="an-modal-city">{d.city}</h3>
                 <div className="an-modal-subtitle">{d.tag}</div>
                 <span className="an-modal-pill">{d.sub}</span>

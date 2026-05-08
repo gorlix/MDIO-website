@@ -121,9 +121,9 @@ const Distretto2041 = () => {
               Connesso, inclusivo, proiettato verso il futuro.
             </p>
             <div className="d-hero-stats">
-              <span><strong>18</strong> club</span>
+              <span><strong>13</strong> club</span>
               <span>·</span>
-              <span><strong>352</strong> soci</span>
+              <span><strong>350</strong> soci</span>
               <span>·</span>
               <span><strong>1</strong> metropoli</span>
               <span>·</span>

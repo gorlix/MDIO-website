@@ -134,9 +134,9 @@ const Distretto2050 = () => {
               dalla Lombardia all'Emilia.
             </p>
             <div className="d-hero-stats">
-              <span><strong>21</strong> club</span>
+              <span><strong>30</strong> club</span>
               <span>·</span>
-              <span><strong>398</strong> soci</span>
+              <span><strong>403</strong> soci</span>
               <span>·</span>
               <span><strong>6</strong> province</span>
               <span>·</span>
