@@ -65,10 +65,10 @@ const AperturaNazionale = () => {
         { t: '14:00', title: 'Attività opzionali pomeridiane', d: 'Team building pit stop all\'autodromo (cambio gomme su auto da corsa) · Masterclass Rinascente one-to-one (profumi, make-up).' },
         { t: '17:30', title: 'Navetta → Autodromo', d: 'Partenza dall\'Hotel Falcone. Tour della pista in bus con guida ufficiale. Salita sul podio per le foto ricordo.' },
         { t: '19:00', title: 'Aperitivo standing', d: 'Nell\'area box con auto da esposizione dello sponsor. DJ set. Allestimento floreale.' },
-        { t: '20:30', title: 'Cena di gala', d: 'Antipasto · Primo · Secondo · Dolce. Vino senza limiti + drink incluso. Mise en place curata.' },
+        { t: '20:30', title: 'Cena di gala', d: 'Antipasto · Primo · Secondo · Dolce. + drink incluso.' },
       ],
       info: [
-        { l: 'Prezzo', v: '€75 + IVA 10%' },
+        { l: 'Prezzo', v: '€160', s: 'Prezzo unico' },
         { l: 'Hotel', v: 'Falcone 4★', s: 'Monza centro' },
         { l: 'Trasporti', v: 'Navette incluse', s: 'hotel ↔ autodromo' },
         { l: 'Da Milano', v: '15 min', s: 'in treno da Centrale' },
@@ -98,7 +98,7 @@ const AperturaNazionale = () => {
         { l: 'Location', v: 'Lago d\'Iseo', s: 'Provincia di Brescia' },
         { l: 'Da Monza', v: '~1h', s: 'in auto o treno' },
         { l: 'Ospite', v: 'Astronauta ESA', s: 'TBC' },
-        { l: 'Incluso', v: 'Pacchetto', s: 'weekend completo' },
+        { l: 'Prezzo', v: '€55', s: 'Prezzo unico' },
       ],
     },
   ];
@@ -106,11 +106,11 @@ const AperturaNazionale = () => {
   const faq = [
     {
       q: 'Posso partecipare a un solo giorno?',
-      a: 'Certo. Ogni giornata ha il suo pacchetto dedicato — Milano (€80), Monza (€75) e Iseo (€55). Il pacchetto Weekend Completo include tutti e tre più hotel e navette.',
+      a: 'Certo. Puoi scegliere i Biglietti Singoli per partecipare solo alle singole giornate: Milano (€80), Monza (€160) e Iseo (€55). Oppure puoi scegliere uno dei Pacchetti Experience con hotel incluso.',
     },
     {
       q: 'L\'hotel è incluso nel pacchetto?',
-      a: 'Solo nel pacchetto Weekend Completo, dove è inclusa una notte all\'Hotel Falcone 4★ di Monza in camera doppia. Per i singoli giorni l\'hotel è opzionale e va prenotato a parte (convenzione disponibile).',
+      a: 'Sì, tutti i Pacchetti Experience (Full Weekend, Venerdì & Sabato, Sabato & Domenica) includono il pernottamento all\'Hotel Falcone 4★ e le navette. Per i Biglietti Singoli, l\'hotel non è incluso.',
     },
     {
       q: 'Come arrivo a Monza dall\'aeroporto?',
@@ -122,7 +122,7 @@ const AperturaNazionale = () => {
     },
     {
       q: 'Entro quando posso iscrivermi?',
-      a: 'Le iscrizioni aprono in 3 wave: Early Bird (entro maggio), Standard (giugno-luglio), Last Call (agosto, posti residui). I posti per il sabato a Monza sono limitati a 350.',
+      a: 'Le iscrizioni sono aperte fino ad esaurimento posti. Non ci sono aumenti di prezzo last minute: la quota è bloccata. I posti per il sabato a Monza sono limitati a 350.',
     },
   ];
 
@@ -155,8 +155,11 @@ const AperturaNazionale = () => {
               <em>Nazionale</em><br />
               2026.
             </h1>
-            <div className="an-hero-dates">18 · 19 · 20 Settembre</div>
-            <p className="an-hero-lede">
+            <div className="an-hero-dates" style={{ marginBottom: '16px' }}>18 · 19 · 20 Settembre</div>
+            <div style={{ display: 'inline-block', background: 'var(--gold)', color: 'var(--ink)', padding: '8px 20px', borderRadius: '999px', fontSize: '14px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '32px', border: '1px solid rgba(0,0,0,0.1)', boxShadow: '0 4px 12px rgba(230, 185, 128, 0.3)' }}>
+              Il primo evento nazionale diffuso in 3 distretti
+            </div>
+            <p className="an-hero-lede" style={{ marginTop: 0 }}>
               Tre giorni per aprire l'anno rotaractiano <em>tutti insieme</em>:
               {' '}<strong>Milano</strong> tra danze e profumi orientali,
               {' '}<strong>Monza</strong> al gala dell'Autodromo,
@@ -194,7 +197,7 @@ const AperturaNazionale = () => {
       <section className="an-countdown">
         <div className="an-countdown-inner">
           <div className="an-countdown-label">
-            Manca poco<br />all'apertura<br /><em style={{ color: '#fff', fontStyle: 'normal' }}>nazionale</em>
+            Manca poco all'apertura <em style={{ color: '#fff', fontStyle: 'normal' }}>nazionale</em>
           </div>
           <div className="an-countdown-numbers">
             <Countdown />
@@ -282,66 +285,129 @@ const AperturaNazionale = () => {
               Scegli il tuo<br /><em>pacchetto</em>.
             </h2>
             <p className="an-pacchetti-lede">
-              Partecipa a una giornata o vivi il weekend completo.
-              {' '}I posti sono limitati e le wave scadono in fretta.
+              Crediamo nel valore della partecipazione, non nell'ansia della prenotazione. Nessun dynamic pricing, nessun aumento dell'ultimo minuto: abbiamo scelto di mantenere un <strong>prezzo unico e bloccato</strong>. Stessa esperienza, massima trasparenza.
             </p>
           </div>
         </div>
 
-        <div className="an-pack-grid">
-          {/* Singolo Giorno */}
-          <div className="an-pack">
-            <div className="an-pack-dates">18 SET · UN GIORNO</div>
-            <h3 className="an-pack-name">Solo <em>Milano</em></h3>
-            <div className="an-pack-tag">Serata Mille e una Notte</div>
-            <div className="an-pack-price">€80</div>
-            <div className="an-pack-price-sub">tutto incluso</div>
-            <ul className="an-pack-includes">
-              <li>Ingresso nella magia di Agrabah</li>
-              <li>Cena con live show orientale</li>
-              <li>Dopocena con DJ set esclusivo</li>
-              <li>Navette di rientro verso le 2:00</li>
-              <li className="muted">Hotel non incluso</li>
-              <li className="muted">Sabato/Domenica esclusi</li>
+        <div style={{ maxWidth: '1400px', margin: '0 auto', paddingBottom: '40px' }}>
+          <h3 style={{ fontFamily: 'Fraunces, serif', fontSize: '36px', margin: 0 }}>
+            Pacchetti <em>Experience</em> <span style={{ fontSize: '18px', fontFamily: 'Inter, sans-serif', fontStyle: 'normal', color: '#cfc8b8' }}>(Multi-giorno con Hotel)</span>
+          </h3>
+        </div>
+
+        <div className="an-pack-hero an-pack featured" style={{ padding: '48px 40px' }}>
+          <div className="an-pack-best" style={{ left: '48px', transform: 'none', top: '-14px', fontSize: '13px', padding: '8px 24px' }}>Best Seller Assoluto</div>
+
+          <div>
+            <div className="an-pack-dates" style={{ fontSize: '15px' }}>2 NOTTI + 3 GIORNI</div>
+            <h3 className="an-pack-name" style={{ fontSize: 'clamp(40px, 5vw, 64px)', margin: '8px 0 16px' }}>Full<br /><em>Weekend</em></h3>
+            <div className="an-pack-tag" style={{ fontSize: '18px', color: 'var(--muted)', marginBottom: 0 }}>Milano, Monza e Iseo — Tutto incluso</div>
+            <ul className="an-pack-includes" style={{ margin: 0, marginTop: '24px' }}>
+              <li>Cena Venerdì (Milano)</li>
+              <li>Cena Gala Sabato (Monza)</li>
+              <li>Pranzo Domenica (Iseo)</li>
+              <li>2 Notti in Hotel 4★ a Monza</li>
+              <li>Navette incluse tra hotel ed eventi</li>
             </ul>
-            <a href="#pacchetti" className="an-pack-cta">Acquista il singolo</a>
           </div>
 
-          {/* Weekend Completo - featured */}
-          <div className="an-pack featured">
-            <div className="an-pack-best">Miglior scelta</div>
-            <div className="an-pack-dates">18 · 19 · 20 SET</div>
-            <h3 className="an-pack-name"><em>Weekend</em> Completo<br />Zero Sbatti</h3>
-            <div className="an-pack-tag">Milano, Monza e Lago d'Iseo — anche il driver</div>
-            <div className="an-pack-price">TBD</div>
-            <div className="an-pack-price-sub">tutto incluso · prezzo in definizione</div>
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', borderLeft: '1.5px solid #eae7e0', paddingLeft: '48px', minHeight: '200px' }}>
+            <div className="an-pack-price" style={{ fontSize: 'clamp(64px, 8vw, 88px)', margin: '0 0 8px', borderTop: 'none', paddingTop: 0 }}>TBD</div>
+            <div className="an-pack-price-sub" style={{ fontSize: '15px', marginBottom: '32px' }}>prezzo in definizione</div>
+            <a href="#pacchetti" className="an-pack-cta" style={{ background: '#444', fontSize: '18px', padding: '20px 48px', display: 'inline-block', width: '100%' }}>In arrivo</a>
+          </div>
+        </div>
+
+        <div className="an-pack-grid-2" style={{ marginBottom: '40px' }}>
+          {/* Ven & Sab */}
+          <div className="an-pack">
+            <div className="an-pack-dates">2 NOTTI</div>
+            <h3 className="an-pack-name" style={{ fontSize: '26px' }}>Venerdì &<br /><em>Sabato</em></h3>
+            <div className="an-pack-tag">Milano + Monza</div>
+            <div className="an-pack-price" style={{ fontSize: '48px' }}>TBD</div>
+            <div className="an-pack-price-sub">prezzo in definizione</div>
             <ul className="an-pack-includes">
-              <li>Serata "Mille e una Notte" a Milano</li>
-              <li>Gala all'Autodromo di Monza</li>
-              <li>Pranzo conviviale sul Lago d'Iseo</li>
-              <li>Hotel Falcone 4★ · Monza centro</li>
-              <li>Navette incluse hotel ↔ eventi</li>
-              <li>Welcome bag e gadget esclusivi</li>
+              <li>Cena Venerdì (Milano)</li>
+              <li>Cena Gala Sabato (Monza)</li>
+              <li>2 Notti in Hotel 4★</li>
+              <li>Navette incluse</li>
             </ul>
-            <a href="#pacchetti" className="an-pack-cta">Acquista il weekend</a>
+            <a href="#pacchetti" className="an-pack-cta" style={{ background: '#444' }}>In arrivo</a>
+          </div>
+
+          {/* Sab & Dom */}
+          <div className="an-pack">
+            <div className="an-pack-dates">1 NOTTE + 2 GIORNI</div>
+            <h3 className="an-pack-name" style={{ fontSize: '26px' }}>Sabato &<br /><em>Domenica</em></h3>
+            <div className="an-pack-tag">Monza + Iseo</div>
+            <div className="an-pack-price" style={{ fontSize: '48px' }}>TBD</div>
+            <div className="an-pack-price-sub">prezzo in definizione</div>
+            <ul className="an-pack-includes">
+              <li>Cena Gala Sabato (Monza)</li>
+              <li>Pranzo Domenica (Iseo)</li>
+              <li>1 Notte in Hotel 4★</li>
+              <li>Navette incluse</li>
+            </ul>
+            <a href="#pacchetti" className="an-pack-cta" style={{ background: '#444' }}>In arrivo</a>
+          </div>
+        </div>
+
+        <div style={{ maxWidth: '1400px', margin: '0 auto 80px' }}>
+          <div style={{ background: 'rgba(200, 23, 74, 0.15)', border: '1.5px solid var(--cranberry)', padding: '24px', borderRadius: '8px', color: '#fff', display: 'flex', alignItems: 'center', gap: '24px' }}>
+            <div style={{ fontSize: '40px', flexShrink: 0 }}>🚌</div>
+            <div style={{ fontSize: '15px', lineHeight: 1.5 }}>
+              <strong style={{ color: 'var(--gold)', letterSpacing: '1px', textTransform: 'uppercase', fontSize: '13px', display: 'block', marginBottom: '4px' }}>Logistica</strong>
+              <strong>Il servizio navetta è sempre incluso</strong> per chi acquista i pacchetti comprensivi di hotel! Non dovrai preoccuparti degli spostamenti tra gli eventi e la struttura.
+            </div>
+          </div>
+        </div>
+
+        <h3 style={{ fontFamily: 'Fraunces, serif', fontSize: '36px', marginBottom: '32px', maxWidth: '1400px', margin: '0 auto 32px', borderTop: '1px solid #444', paddingTop: '64px' }}>
+          Biglietti Singoli
+        </h3>
+
+        <div className="an-pack-grid" style={{ marginBottom: '80px' }}>
+          {/* Singolo Venerdì */}
+          <div className="an-pack" style={{ padding: '28px 24px' }}>
+            <div className="an-pack-dates">18 SET · UN GIORNO</div>
+            <h3 className="an-pack-name" style={{ fontSize: '24px' }}>Solo <em>Milano</em></h3>
+            <div className="an-pack-tag" style={{ marginBottom: '16px' }}>Serata Mille e una Notte</div>
+            <div className="an-pack-price" style={{ fontSize: '40px', margin: '0 0 4px', paddingTop: '16px' }}>€80</div>
+            <div className="an-pack-price-sub" style={{ marginBottom: '16px' }}>tutto incluso</div>
+            <p style={{ fontSize: '14.5px', lineHeight: 1.5, color: '#2a2620', marginBottom: '24px', flex: 1 }}>
+              Ingresso ad Agrabah, cena con live show orientale e DJ set esclusivo. Navette di rientro disponibili.<br /><br /><span style={{ color: '#b0aa9d' }}>Hotel non incluso.</span>
+            </p>
+            <div className="an-pack-guarantee" style={{ fontSize: '11px', textAlign: 'center', marginBottom: '10px', color: '#c8174a', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px' }}>✓ Prezzo Bloccato</div>
+            <a href="#pacchetti" className="an-pack-cta" style={{ padding: '12px' }}>Acquista il singolo</a>
           </div>
 
           {/* Singolo Sabato */}
-          <div className="an-pack">
+          <div className="an-pack" style={{ padding: '28px 24px' }}>
             <div className="an-pack-dates">19 SET · GALA</div>
-            <h3 className="an-pack-name">Solo <em>Monza</em></h3>
-            <div className="an-pack-tag">Gala all'Autodromo</div>
-            <div className="an-pack-price">€75<span style={{ fontSize: '18px', color: '#6b665b', fontFamily: 'Inter' }}> +IVA</span></div>
-            <div className="an-pack-price-sub">cena gala · vino senza limiti</div>
-            <ul className="an-pack-includes">
-              <li>Tour pista in bus + podio</li>
-              <li>Aperitivo standing area box</li>
-              <li>Cena di gala 4 portate</li>
-              <li>Vino e drink inclusi · DJ set</li>
-              <li>Navetta dall'Hotel Falcone</li>
-              <li className="muted">Hotel non incluso</li>
-            </ul>
-            <a href="#pacchetti" className="an-pack-cta">Acquista il singolo</a>
+            <h3 className="an-pack-name" style={{ fontSize: '24px' }}>Solo <em>Monza</em></h3>
+            <div className="an-pack-tag" style={{ marginBottom: '16px' }}>Gala all'Autodromo</div>
+            <div className="an-pack-price" style={{ fontSize: '40px', margin: '0 0 4px', paddingTop: '16px' }}>€160</div>
+            <div className="an-pack-price-sub" style={{ marginBottom: '16px' }}>cena gala</div>
+            <p style={{ fontSize: '14.5px', lineHeight: 1.5, color: '#2a2620', marginBottom: '24px', flex: 1 }}>
+              Tour della pista, aperitivo standing nell'area box, cena di gala 4 portate e DJ set. Navetta inclusa dall'Hotel Falcone.<br /><br /><span style={{ color: '#b0aa9d' }}>Hotel non incluso.</span>
+            </p>
+            <div className="an-pack-guarantee" style={{ fontSize: '11px', textAlign: 'center', marginBottom: '10px', color: '#c8174a', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px' }}>✓ Prezzo Bloccato</div>
+            <a href="#pacchetti" className="an-pack-cta" style={{ padding: '12px' }}>Acquista il singolo</a>
+          </div>
+
+          {/* Singolo Domenica */}
+          <div className="an-pack" style={{ padding: '28px 24px' }}>
+            <div className="an-pack-dates">20 SET · CONVIVIALE</div>
+            <h3 className="an-pack-name" style={{ fontSize: '24px' }}>Solo <em>Iseo</em></h3>
+            <div className="an-pack-tag" style={{ marginBottom: '16px' }}>Chiusura sul Lago</div>
+            <div className="an-pack-price" style={{ fontSize: '40px', margin: '0 0 4px', paddingTop: '16px' }}>€55</div>
+            <div className="an-pack-price-sub" style={{ marginBottom: '16px' }}>pranzo conviviale</div>
+            <p style={{ fontSize: '14.5px', lineHeight: 1.5, color: '#2a2620', marginBottom: '24px', flex: 1 }}>
+              Sessione dei Lavori Ufficiali, Cerimonia di Passaggio di Consegne, relatore d'eccezione e pranzo sul Lago d'Iseo.<br /><br /><span style={{ color: '#b0aa9d' }}>Hotel e trasporti non inclusi.</span>
+            </p>
+            <div className="an-pack-guarantee" style={{ fontSize: '11px', textAlign: 'center', marginBottom: '10px', color: '#c8174a', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px' }}>✓ Prezzo Bloccato</div>
+            <a href="#pacchetti" className="an-pack-cta" style={{ padding: '12px' }}>Acquista il singolo</a>
           </div>
         </div>
       </section>
