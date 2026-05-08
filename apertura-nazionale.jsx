@@ -28,21 +28,21 @@ const AperturaNazionale = () => {
       img: 'assets/2041-05-Milano.jpeg',
       color: 'cranberry',
       bullets: [
-        'Locale "Mille e una Notte" — danzatrici, hennè, profumi orientali',
-        'Cena 4 portate con vino incluso (~€75)',
-        'Dopocena opzionale ai Magazzini Generali',
+        'Ingresso nella magia di Agrabah',
+        'Cena con live show e delizie d\'oriente',
+        'Dopocena con DJ set esclusivo',
       ],
       timeline: [
-        { t: '19:30', title: 'Ingresso & accoglienza', d: 'Tappeto rosso, photo booth con specchio magico, postazione profumi orientali e hennè per le socie.' },
-        { t: '20:30', title: 'Cena 4 portate', d: 'Falafel e involtini · Couscous con carne · Dolci orientali. Vino incluso. Spettacolo di danzatrici del ventre durante la cena.' },
-        { t: '23:00', title: 'Dopocena ai Magazzini Generali', d: 'Opzionale · ~€30 ingresso + 2 drink. Locale adiacente al ristorante con accesso diretto al privé.' },
-        { t: 'Fine', title: 'Rientro autonomo', d: 'Metro M3 Porta Romana a pochi minuti dal locale.' },
+        { t: '20:00', title: 'Ingresso & accoglienza', d: 'Immergiti nella magia di Agrabah e se fortunato tieniti pronto ad esprimere 3 desideri.' },
+        { t: 'A seguire', title: 'Cena con live show', d: 'Gusta le delizie d\'oriente e lasciati trasportare in un\'atmosfera unica.' },
+        { t: 'Dopocena', title: 'DJ set esclusivo', d: 'La serata continua con musica e divertimento per tutti.' },
+        { t: '02:00', title: 'Navette di rientro', d: 'Navette disponibili verso le 2:00 circa per chi alloggia negli hotel.' },
       ],
       info: [
-        { l: 'Prezzo', v: '~€75', s: 'tutto incluso' },
-        { l: 'Posti', v: 'Max 130', s: 'sold out atteso' },
-        { l: 'Come arrivare', v: 'Metro M3', s: 'Porta Romana' },
-        { l: 'Dress code', v: 'Tema orientale', s: 'consigliato' },
+        { l: 'Prezzo', v: '€80' },
+        { l: 'Posti', v: 'Limitati', s: 'su prenotazione' },
+        { l: 'Come arrivare', v: 'Auto o mezzi', s: 'Tibaldi-Bocconi, bus 65' },
+        { l: 'Dress code', v: 'Mille e una notte', s: 'tocco arabeggiante' },
       ],
     },
     {
@@ -106,7 +106,7 @@ const AperturaNazionale = () => {
   const faq = [
     {
       q: 'Posso partecipare a un solo giorno?',
-      a: 'Certo. Ogni giornata ha il suo pacchetto dedicato — Milano (~€75), Monza (€75 + IVA) e Iseo (incluso nel weekend). Il pacchetto Weekend Completo include tutti e tre più hotel e navette.',
+      a: 'Certo. Ogni giornata ha il suo pacchetto dedicato — Milano (€80), Monza (€75) e Iseo (€55). Il pacchetto Weekend Completo include tutti e tre più hotel e navette.',
     },
     {
       q: 'L\'hotel è incluso nel pacchetto?',
@@ -118,7 +118,7 @@ const AperturaNazionale = () => {
     },
     {
       q: 'Qual è il dress code?',
-      a: 'Venerdì sera tema "Mille e una Notte" — consigliati abiti orientaleggianti o eleganti scuri. Sabato gala all\'Autodromo: black tie / abito lungo per le donne, smoking o abito scuro per gli uomini. Domenica casual elegante.',
+      a: 'Venerdì sera tema "Mille e una Notte" — mettiti un tocco arabeggiante! Sabato gala all\'Autodromo: black tie / abito lungo per le donne, smoking o abito scuro per gli uomini. Domenica casual elegante.',
     },
     {
       q: 'Entro quando posso iscrivermi?',
@@ -294,13 +294,13 @@ const AperturaNazionale = () => {
             <div className="an-pack-dates">18 SET · UN GIORNO</div>
             <h3 className="an-pack-name">Solo <em>Milano</em></h3>
             <div className="an-pack-tag">Serata Mille e una Notte</div>
-            <div className="an-pack-price">€75</div>
-            <div className="an-pack-price-sub">tutto incluso · vino incluso</div>
+            <div className="an-pack-price">€80</div>
+            <div className="an-pack-price-sub">tutto incluso</div>
             <ul className="an-pack-includes">
-              <li>Cena 4 portate orientale</li>
-              <li>Vino e drink inclusi</li>
-              <li>Spettacolo danzatrici del ventre</li>
-              <li>Photo booth specchio magico</li>
+              <li>Ingresso nella magia di Agrabah</li>
+              <li>Cena con live show orientale</li>
+              <li>Dopocena con DJ set esclusivo</li>
+              <li>Navette di rientro verso le 2:00</li>
               <li className="muted">Hotel non incluso</li>
               <li className="muted">Sabato/Domenica esclusi</li>
             </ul>
