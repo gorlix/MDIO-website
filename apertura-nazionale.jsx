@@ -39,7 +39,7 @@ const AperturaNazionale = () => {
         { t: '02:00', title: 'Navette di rientro', d: 'Navette disponibili verso le 2:00 circa per chi alloggia negli hotel.' },
       ],
       info: [
-        { l: 'Prezzo', v: '€80' },
+        { l: 'Prezzo', v: 'TBD' },
         { l: 'Posti', v: 'Limitati', s: 'su prenotazione' },
         { l: 'Come arrivare', v: 'Auto o mezzi', s: 'Tibaldi-Bocconi, bus 65' },
         { l: 'Dress code', v: 'Mille e una notte', s: 'tocco arabeggiante' },
@@ -68,7 +68,7 @@ const AperturaNazionale = () => {
         { t: '20:30', title: 'Cena di gala', d: 'Antipasto · Primo · Secondo · Dolce. + drink incluso.' },
       ],
       info: [
-        { l: 'Prezzo', v: '€160', s: 'Prezzo unico' },
+        { l: 'Prezzo', v: 'TBD', s: 'Prezzo unico' },
         { l: 'Hotel', v: 'Falcone 4★', s: 'Monza centro' },
         { l: 'Trasporti', v: 'Navette incluse', s: 'hotel ↔ autodromo' },
         { l: 'Da Milano', v: '15 min', s: 'in treno da Centrale' },
@@ -84,21 +84,21 @@ const AperturaNazionale = () => {
       img: 'assets/2050-10-Brescia.jpeg',
       color: 'gold',
       bullets: [
-        'Sessione ufficiale + passaggio di consegne distrettuali',
-        'Relatore d\'eccezione (in corso di conferma)',
+        'Lavori Distrettuale 2050',
+        'Relatore d\'eccezione',
         'Pranzo conviviale sul Lago d\'Iseo',
       ],
       timeline: [
-        { t: '10:00', title: 'Lavori ufficiali', d: 'Sessione ufficiale dell\'Apertura Nazionale. Presentazioni dei 14 distretti d\'Italia. Sala con attrezzatura completa.' },
-        { t: '12:30', title: 'Passaggio di consegne', d: 'Cerimonia ufficiale di passaggio tra gli esecutivi uscenti e i nuovi rappresentanti distrettuali.' },
-        { t: '13:30', title: 'Conviviale con relatore d\'eccezione', d: 'Pranzo con ospite speciale in corso di conferma: Luca Parmitano o Samantha Cristoforetti. Un momento unico sul Lago d\'Iseo.' },
+        { t: '10:00', title: 'Lavori ufficiali', d: 'Inizio Session Lavori Distretto 2050.' },
+        { t: '12:30', title: 'Inizio Conviviale', d: 'Inizio della giornata conviviale sul Lago d\'Iseo.' },
+        { t: '13:30', title: 'Conviviale con relatore d\'eccezione', d: 'Pranzo con ospite speciale. Un momento unico sul Lago d\'Iseo.' },
         { t: '16:00', title: 'Chiusura & saluti', d: 'Arrivederci al prossimo Nazionale. Rientro autonomo.' },
       ],
       info: [
         { l: 'Location', v: 'Lago d\'Iseo', s: 'Provincia di Brescia' },
         { l: 'Da Monza', v: '~1h', s: 'in auto o treno' },
-        { l: 'Ospite', v: 'Astronauta ESA', s: 'TBC' },
-        { l: 'Prezzo', v: '€55', s: 'Prezzo unico' },
+        { l: 'Ospite', v: 'Seguiranno Sorprese'},
+        { l: 'Prezzo', v: 'TBD', s: 'Prezzo unico' },
       ],
     },
   ];
@@ -106,7 +106,7 @@ const AperturaNazionale = () => {
   const faq = [
     {
       q: 'Posso partecipare a un solo giorno?',
-      a: 'Certo. Puoi scegliere i Biglietti Singoli per partecipare solo alle singole giornate: Milano (€80), Monza (€160) e Iseo (€55). Oppure puoi scegliere uno dei Pacchetti Experience con hotel incluso.',
+      a: 'Certo. Puoi scegliere i Biglietti Singoli per partecipare solo alle singole giornate: Milano (TBD), Monza (TBD) e Iseo (€55). Oppure puoi scegliere uno dei Pacchetti Experience con hotel incluso.',
     },
     {
       q: 'L\'hotel è incluso nel pacchetto?',
@@ -302,7 +302,7 @@ const AperturaNazionale = () => {
           <div>
             <div className="an-pack-dates" style={{ fontSize: '15px' }}>2 NOTTI + 3 GIORNI</div>
             <h3 className="an-pack-name" style={{ fontSize: 'clamp(40px, 5vw, 64px)', margin: '8px 0 16px' }}>Full<br /><em>Weekend</em></h3>
-            <div className="an-pack-tag" style={{ fontSize: '18px', color: 'var(--muted)', marginBottom: 0 }}>Milano, Monza e Iseo — Tutto incluso</div>
+            <div className="an-pack-tag" style={{ fontSize: '18px', color: 'var(--muted)', marginBottom: 0 }}>Milano, Monza e Iseo</div>
             <ul className="an-pack-includes" style={{ margin: 0, marginTop: '24px' }}>
               <li>Cena Venerdì (Milano)</li>
               <li>Cena Gala Sabato (Monza)</li>
@@ -314,7 +314,7 @@ const AperturaNazionale = () => {
 
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', borderLeft: '1.5px solid #eae7e0', paddingLeft: '48px', minHeight: '200px' }}>
             <div className="an-pack-price" style={{ fontSize: 'clamp(64px, 8vw, 88px)', margin: '0 0 8px', borderTop: 'none', paddingTop: 0 }}>TBD</div>
-            <div className="an-pack-price-sub" style={{ fontSize: '15px', marginBottom: '32px' }}>prezzo in definizione</div>
+            <div className="an-pack-price-sub" style={{ fontSize: '15px', marginBottom: '32px' }}>Stay Tuned</div>
             <a href="#pacchetti" className="an-pack-cta" style={{ background: '#444', fontSize: '18px', padding: '20px 48px', display: 'inline-block', width: '100%' }}>In arrivo</a>
           </div>
         </div>
@@ -326,7 +326,7 @@ const AperturaNazionale = () => {
             <h3 className="an-pack-name" style={{ fontSize: '26px' }}>Venerdì &<br /><em>Sabato</em></h3>
             <div className="an-pack-tag">Milano + Monza</div>
             <div className="an-pack-price" style={{ fontSize: '48px' }}>TBD</div>
-            <div className="an-pack-price-sub">prezzo in definizione</div>
+            <div className="an-pack-price-sub">Stay Tuned</div>
             <ul className="an-pack-includes">
               <li>Cena Venerdì (Milano)</li>
               <li>Cena Gala Sabato (Monza)</li>
@@ -342,7 +342,7 @@ const AperturaNazionale = () => {
             <h3 className="an-pack-name" style={{ fontSize: '26px' }}>Sabato &<br /><em>Domenica</em></h3>
             <div className="an-pack-tag">Monza + Iseo</div>
             <div className="an-pack-price" style={{ fontSize: '48px' }}>TBD</div>
-            <div className="an-pack-price-sub">prezzo in definizione</div>
+            <div className="an-pack-price-sub">Stay Tuned</div>
             <ul className="an-pack-includes">
               <li>Cena Gala Sabato (Monza)</li>
               <li>Pranzo Domenica (Iseo)</li>
@@ -373,13 +373,13 @@ const AperturaNazionale = () => {
             <div className="an-pack-dates">18 SET · UN GIORNO</div>
             <h3 className="an-pack-name" style={{ fontSize: '24px' }}>Solo <em>Milano</em></h3>
             <div className="an-pack-tag" style={{ marginBottom: '16px' }}>Serata Mille e una Notte</div>
-            <div className="an-pack-price" style={{ fontSize: '40px', margin: '0 0 4px', paddingTop: '16px' }}>€80</div>
-            <div className="an-pack-price-sub" style={{ marginBottom: '16px' }}>tutto incluso</div>
+            <div className="an-pack-price" style={{ fontSize: '40px', margin: '0 0 4px', paddingTop: '16px' }}>TBD</div>
+            <div className="an-pack-price-sub" style={{ marginBottom: '16px' }}>Stay Tuned</div>
             <p style={{ fontSize: '14.5px', lineHeight: 1.5, color: '#2a2620', marginBottom: '24px', flex: 1 }}>
               Ingresso ad Agrabah, cena con live show orientale e DJ set esclusivo. Navette di rientro disponibili.<br /><br /><span style={{ color: '#b0aa9d' }}>Hotel non incluso.</span>
             </p>
             <div className="an-pack-guarantee" style={{ fontSize: '11px', textAlign: 'center', marginBottom: '10px', color: '#c8174a', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px' }}>✓ Prezzo Bloccato</div>
-            <a href="#pacchetti" className="an-pack-cta" style={{ padding: '12px' }}>Acquista il singolo</a>
+            <a href="#pacchetti" className="an-pack-cta" style={{ background: '#444' }}>In arrivo</a>
           </div>
 
           {/* Singolo Sabato */}
@@ -387,13 +387,13 @@ const AperturaNazionale = () => {
             <div className="an-pack-dates">19 SET · GALA</div>
             <h3 className="an-pack-name" style={{ fontSize: '24px' }}>Solo <em>Monza</em></h3>
             <div className="an-pack-tag" style={{ marginBottom: '16px' }}>Gala all'Autodromo</div>
-            <div className="an-pack-price" style={{ fontSize: '40px', margin: '0 0 4px', paddingTop: '16px' }}>€160</div>
-            <div className="an-pack-price-sub" style={{ marginBottom: '16px' }}>cena gala</div>
+            <div className="an-pack-price" style={{ fontSize: '40px', margin: '0 0 4px', paddingTop: '16px' }}>TBD</div>
+            <div className="an-pack-price-sub" style={{ marginBottom: '16px' }}>Stay Tuned</div>
             <p style={{ fontSize: '14.5px', lineHeight: 1.5, color: '#2a2620', marginBottom: '24px', flex: 1 }}>
               Tour della pista, aperitivo standing nell'area box, cena di gala 4 portate e DJ set. Navetta inclusa dall'Hotel Falcone.<br /><br /><span style={{ color: '#b0aa9d' }}>Hotel non incluso.</span>
             </p>
             <div className="an-pack-guarantee" style={{ fontSize: '11px', textAlign: 'center', marginBottom: '10px', color: '#c8174a', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px' }}>✓ Prezzo Bloccato</div>
-            <a href="#pacchetti" className="an-pack-cta" style={{ padding: '12px' }}>Acquista il singolo</a>
+            <a href="#pacchetti" className="an-pack-cta" style={{ background: '#444' }}>In arrivo</a>
           </div>
 
           {/* Singolo Domenica */}
@@ -401,13 +401,13 @@ const AperturaNazionale = () => {
             <div className="an-pack-dates">20 SET · CONVIVIALE</div>
             <h3 className="an-pack-name" style={{ fontSize: '24px' }}>Solo <em>Iseo</em></h3>
             <div className="an-pack-tag" style={{ marginBottom: '16px' }}>Chiusura sul Lago</div>
-            <div className="an-pack-price" style={{ fontSize: '40px', margin: '0 0 4px', paddingTop: '16px' }}>€55</div>
-            <div className="an-pack-price-sub" style={{ marginBottom: '16px' }}>pranzo conviviale</div>
+            <div className="an-pack-price" style={{ fontSize: '40px', margin: '0 0 4px', paddingTop: '16px' }}>TBD</div>
+            <div className="an-pack-price-sub" style={{ marginBottom: '16px' }}>Stay Tuned</div>
             <p style={{ fontSize: '14.5px', lineHeight: 1.5, color: '#2a2620', marginBottom: '24px', flex: 1 }}>
               Sessione dei Lavori Ufficiali, Cerimonia di Passaggio di Consegne, relatore d'eccezione e pranzo sul Lago d'Iseo.<br /><br /><span style={{ color: '#b0aa9d' }}>Hotel e trasporti non inclusi.</span>
             </p>
             <div className="an-pack-guarantee" style={{ fontSize: '11px', textAlign: 'center', marginBottom: '10px', color: '#c8174a', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px' }}>✓ Prezzo Bloccato</div>
-            <a href="#pacchetti" className="an-pack-cta" style={{ padding: '12px' }}>Acquista il singolo</a>
+            <a href="#pacchetti" className="an-pack-cta" style={{ background: '#444' }}>In arrivo</a>
           </div>
         </div>
       </section>

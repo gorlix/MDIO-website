@@ -24,7 +24,7 @@
 }
 .an-root * { box-sizing: border-box; }
 .an-root img { max-width: 100%; display: block; }
-.an-root a { color: inherit; text-decoration: none; }
+.an-root a { /*color: inherit;*/ text-decoration: none; }
 .an-root em {
   font-family: 'Fraunces', serif;
   font-style: italic;
@@ -619,6 +619,7 @@
 .an-pack-cta:hover { background: var(--cranberry); }
 .an-pack.featured .an-pack-cta { background: var(--cranberry); }
 .an-pack.featured .an-pack-cta:hover { background: var(--cranberry-d); }
+
 
 /* INFO PRATICHE */
 .an-info {
