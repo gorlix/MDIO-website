@@ -106,7 +106,7 @@ const AperturaNazionale = () => {
   const faq = [
     {
       q: 'Posso partecipare a un solo giorno?',
-      a: 'Certo. Puoi scegliere i Biglietti Singoli per partecipare solo alle singole giornate: Milano (TBD), Monza (TBD) e Iseo (€55). Oppure puoi scegliere uno dei Pacchetti Experience con hotel incluso.',
+      a: 'Certo. Puoi scegliere i Biglietti Singoli per partecipare solo alle singole giornate: Milano (TBD), Monza (TBD) e Iseo (TBD). Oppure puoi scegliere uno dei Pacchetti Experience con hotel incluso.',
     },
     {
       q: 'L\'hotel è incluso nel pacchetto?',
