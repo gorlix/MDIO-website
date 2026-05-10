@@ -17,6 +17,13 @@ const AperturaNazionale = () => {
     return () => document.removeEventListener('keydown', onKey);
   }, []);
 
+  React.useEffect(() => {
+    const hash = window.location.hash;
+    if (!hash) return;
+    const el = document.querySelector(hash);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, []);
+
   const days = [
     {
       id: 'g1',
