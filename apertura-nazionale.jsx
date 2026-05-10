@@ -116,7 +116,7 @@ const AperturaNazionale = () => {
     },
     {
       q: 'Qual è il dress code?',
-      a: 'Venerdì sera tema "Mille e una Notte" — mettiti un tocco arabeggiante! Sabato gala all\'Autodromo: black tie / abito lungo per le donne, smoking o abito scuro per gli uomini. Domenica casual elegante.',
+      a: 'Venerdì sera tema "Mille e una Notte" — mettiti un tocco arabeggiante!\nSabato gala all\'Autodromo: black tie / abito lungo per le donne, smoking o abito scuro per gli uomini.\nDomenica casual elegante.',
     },
     {
       q: 'Entro quando posso iscrivermi?',
@@ -425,6 +425,37 @@ const AperturaNazionale = () => {
             <a href="#pacchetti" className="an-pack-cta an-pack-cta--coming">In arrivo</a>
           </div>
         </div>
+
+        {/* ── ATTIVITÀ FACOLTATIVE (SEGRETE) ── */}
+        <div className="an-activities-wrap">
+          <div className="an-activities-head">
+            <h3 className="an-pack-group-title an-pack-group-title--activities">
+              Attività <em>Facoltative</em>
+            </h3>
+            <p className="an-activities-sub">Coming Soon</p>
+          </div>
+          <div className="an-activities-grid">
+            {[
+              { name: 'PizzAut', price: 'TBD' },
+              { name: 'Gita a Monza', price: 'TBD' },
+              { name: 'Gita a Milano', price: 'TBD' },
+              { name: 'Museo Campari', price: 'TBD' },
+              { name: 'Experience Rinascente', price: 'TBD' },
+              { name: 'Giro in pista sul bus', price: 'TBD' },
+            ].map((a, i) => (
+              <div key={i} className="an-activity-card">
+                <div className="an-activity-content">
+                  <div className="an-activity-name">{a.name}</div>
+                  <div className="an-activity-price">{a.price}</div>
+                </div>
+                <div className="an-activity-overlay">
+                  <div className="an-activity-lock">🔒</div>
+                  <div className="an-activity-coming">Presto svelato</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* INFO PRATICHE */}
@@ -447,12 +478,12 @@ const AperturaNazionale = () => {
           <div className="an-info-cell">
             <div className="an-info-cell-h">→ Hotel ufficiale</div>
             <div className="an-info-cell-t">Hotel Falcone 4★</div>
-            <div className="an-info-cell-d">Monza centro · convenzione MDIO</div>
+            <div className="an-info-cell-d">Monza centro</div>
           </div>
           <div className="an-info-cell">
             <div className="an-info-cell-h">→ Posti</div>
-            <div className="an-info-cell-t">350 al Gala di Monza</div>
-            <div className="an-info-cell-d">Iscrizioni in 3 wave · sold out atteso</div>
+            <div className="an-info-cell-t"></div>
+            <div className="an-info-cell-d">Iscrizioni in 3 wave</div>
           </div>
           <div className="an-info-cell">
             <div className="an-info-cell-h">→ Trasporti</div>

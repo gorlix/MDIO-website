@@ -735,6 +735,7 @@
   color: #2a2620;
   max-width: 800px;
   text-wrap: pretty;
+  white-space: pre-line;
 }
 .an-faq-item.closed .an-faq-a { display: none; }
 
@@ -1373,3 +1374,110 @@
   pointer-events: none;
 }
 .an-pack-cta--coming:hover { background: #444; }
+
+/* === ATTIVITÀ FACOLTATIVE — EFFETTO SPOILER === */
+.an-activities-wrap {
+  max-width: 1400px;
+  margin: 0 auto 80px;
+  border-top: 1px solid #333;
+  padding-top: 64px;
+}
+.an-activities-head {
+  margin-bottom: 32px;
+}
+.an-pack-group-title--activities {
+  border-top: none;
+  padding-top: 0;
+  margin: 0 0 8px;
+}
+.an-activities-sub {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #918a78;
+  margin: 0;
+}
+.an-activities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.an-activity-card {
+  position: relative;
+  background: #1e1b18;
+  border: 1.5px solid #2e2b27;
+  padding: 28px 24px;
+  overflow: hidden;
+  min-height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+.an-activity-content {
+  filter: blur(8px);
+  user-select: none;
+  pointer-events: none;
+}
+.an-activity-name {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.an-activity-price {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--gold);
+  letter-spacing: 1px;
+}
+
+/* Overlay spoiler animato stile Telegram */
+.an-activity-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: rgba(18, 15, 12, 0.85);
+  background-image: radial-gradient(circle, rgba(255,255,255,0.11) 1px, transparent 1px);
+  background-size: 4px 4px;
+  animation: spoilerNoise 0.35s steps(1) infinite;
+}
+.an-activity-lock {
+  font-size: 20px;
+  line-height: 1;
+}
+.an-activity-coming {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@keyframes spoilerNoise {
+  0%   { background-position: 0px 0px; }
+  25%  { background-position: 3px 1px; }
+  50%  { background-position: 1px 3px; }
+  75%  { background-position: 2px 2px; }
+  100% { background-position: 0px 0px; }
+}
+
+@media (max-width: 1023px) {
+  .an-activities-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 767px) {
+  .an-activities-wrap { padding-top: 48px; margin-bottom: 48px; }
+  .an-activities-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .an-activity-card { min-height: 110px; padding: 20px 16px; }
+  .an-activity-name { font-size: 18px; }
+}
