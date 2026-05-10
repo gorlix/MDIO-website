@@ -60,6 +60,66 @@
   text-underline-offset: 3px;
 }
 
+.shop-soon {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 40px;
+  background: #1a1a1a;
+  color: #f4f1ea;
+}
+.shop-soon-inner {
+  max-width: 640px;
+  text-align: center;
+}
+.shop-soon-eyebrow {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #c8174a;
+  margin-bottom: 24px;
+}
+.shop-soon-title {
+  font-family: 'Archivo', sans-serif;
+  font-size: clamp(36px, 6vw, 72px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin: 0 0 24px;
+}
+.shop-soon-title em {
+  font-style: italic;
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+}
+.shop-soon-sub {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(244,241,234,0.65);
+  margin: 0 0 48px;
+}
+.shop-soon-cta-label {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(244,241,234,0.4);
+  margin: 48px 0 16px;
+}
+.shop-soon-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background: #c8174a;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.shop-soon-btn:hover { background: #a01238; }
+
 @media (max-width: 768px) {
   .shop-hero { padding: 60px 24px 36px; }
   .shop-widget-wrap { padding: 40px 16px 60px; }
