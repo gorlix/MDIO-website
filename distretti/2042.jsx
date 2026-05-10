@@ -15,6 +15,7 @@ const Distretto2042 = () => {
       '../assets/2042-01-Lecco.jpeg', '../assets/2042-02-Bergamo.jpeg',
       '../assets/2042-03-Sondrio.jpeg', '../assets/2042-04-Como.jpeg',
       '../assets/2042-06-Varese.jpeg', '../assets/2042-13-Monza.jpeg',
+      '../assets/2042-14-BergamoAlta.jpeg',
     ];
     return imgs[Math.floor(Math.random() * imgs.length)];
   });
@@ -22,33 +23,37 @@ const Distretto2042 = () => {
   const areas = [
     {
       n: '01',
-      name: 'LAGHI',
-      prov: 'Como · Lecco · Varese',
-      desc: 'Dai grandi laghi prealpini alle ville liberty: la Fellowship più scenografica d\'Italia, tra gite in barca e aperitivi al tramonto.',
-      bg: '#1d6b8f',
-      fg: '#fff',
-    },
-    {
-      n: '02',
-      name: 'VALTELLINA',
-      prov: 'Sondrio',
-      desc: 'Le Alpi come palestra di vita: il RYLA immersivo, i service di soccorso alpino e la resilienza che solo la montagna sa insegnare.',
-      bg: '#2a5c3a',
-      fg: '#fff',
-    },
-    {
-      n: '03',
-      name: 'BRIANZA',
+      name: 'BRIANTEA',
       prov: 'Monza e Brianza',
+      clubs: ['Merate', 'Monza', 'Monza Brianza', 'Vimercate'],
       desc: 'Il cuore del Made in Italy manifatturiero: design, PMI e artigianato d\'eccellenza come terreno fertile per i service più concreti.',
       bg: '#7eb7ff',
       fg: '#1a1a1a',
     },
     {
+      n: '02',
+      name: 'LARIANA',
+      prov: 'Como · Lecco · Sondrio',
+      clubs: ['Cantù', 'Como', 'Erba-Laghi', 'Lecco', 'Sondrio'],
+      desc: 'Dalle Alpi ai laghi: fellowship scenografica, che fa da cornice a service sia storici che innovativi.',
+      bg: '#1d6b8f',
+      fg: '#fff',
+    },
+    {
+      n: '03',
+      name: 'OLONA',
+      prov: 'Varese',
+      clubs: ['Magenta', 'Malpensa', 'Saronno', 'Varese'],
+      desc: 'Dalle contrade del palio all\'innovazione tecnologica, una zona eterogenea che sa ascoltare i bisogni del territorio.',
+      bg: '#2a5c3a',
+      fg: '#fff',
+    },
+    {
       n: '04',
-      name: 'BERGAMASCA',
+      name: 'OROBICA',
       prov: 'Bergamo',
-      desc: 'La provincia più operosa d\'Italia: spirito d\'impresa, comunità solidale e un distretto che non si è fermato nemmeno nei momenti più difficili.',
+      clubs: ['Bergamo', 'Clusone', 'Treviglio'],
+      desc: 'Zona madre del service più ambizioso del Rotary, l\'End Polio Now. Dalle valli alle città continua a produrre service solidi e concreti.',
       bg: '#1a3d8f',
       fg: '#fff',
     },
@@ -86,21 +91,21 @@ const Distretto2042 = () => {
       n: '01',
       icon: '🌲',
       title: 'Tutela del Patrimonio Naturale',
-      body: 'Campagne di riforestazione montana, pulizia dei fondali e delle sponde dei laghi, riqualificazione di antichi sentieri alpini. Il territorio è sacro e va protetto con azioni concrete e continuative.',
+      body: 'Continua collaborazione con comuni e realtà come Plastic Free per concretizzare un sentito interesse per il nostro territorio.',
       tags: ['Natura', 'Laghi', 'Montagna'],
     },
     {
       n: '02',
       icon: '🚑',
       title: 'Sanità & Soccorso sul Territorio',
-      body: 'Grandi service distrettuali per l\'acquisto di macchinari diagnostici per gli ospedali locali, ambulanze e attrezzature per le unità del Soccorso Alpino e della Protezione Civile.',
+      body: 'Grande impegno per la sensibilizzazione su tematiche che spaziano dalla salute mentale alla ricerca scientifica, in particolare con il service di punta "Brainy, coltiviamo la ricerca". Promozione di corsi BLSD e di progetti tra cui il Teddy Bear.',
       tags: ['Ospedali', 'Soccorso Alpino', 'P.C.'],
     },
     {
       n: '03',
       icon: '⛷️',
-      title: 'Inclusione attraverso Sport e Natura',
-      body: 'Il 2042 crede nel potere terapeutico dello sport: presidi per lo sci paralimpico, giornate di vela e ippoterapia per ragazzi con fragilità fisiche e cognitive. La natura non esclude nessuno.',
+      title: 'Inclusione e Attenzione',
+      body: 'Il 2042 lavora collaborando anche con associazioni del territorio per essere di supporto a persone con fragilità. Il Camp dell\'Amicizia e la collaborazione con l\'Arca del Seprio sono esempi di service storici del distretto.',
       tags: ['Paralimpico', 'Vela', 'Ippoterapia'],
     },
   ];
@@ -179,7 +184,7 @@ const Distretto2042 = () => {
               <span className="d-star"> ✦ </span>
               <span>LOMBARDIA CENTRO &amp; NORD</span>
               <span className="d-star"> ✦ </span>
-              <span>24 CLUB · 487 SOCI</span>
+              <span>18 CLUB · 260 SOCI</span>
               <span className="d-star"> ✦ </span>
               <span>BERGAMO · COMO · LECCO · MONZA B. · SONDRIO · VARESE</span>
               <span className="d-star"> ✦ </span>
@@ -196,17 +201,17 @@ const Distretto2042 = () => {
         </div>
         <div className="vb-manifesto-main">
           <h2 className="vb-manifesto-title">
-            Tra Laghi,<br />Vette e Impresa.
+            Tra Laghi,<br />Vette e Imprese.
           </h2>
           <div className="vb-manifesto-body">
             <p className="vb-manifesto-lede">
               Il Distretto 2042 abbraccia <strong>l'anima settentrionale della Lombardia</strong>: due anime complementari che si fondono alla perfezione — l'eccellenza industriale delle valli e la Brianza da un lato, il patrimonio naturalistico mozzafiato dei grandi laghi prealpini e della Valtellina dall'altro.
             </p>
             <p>
-              Visitare il 2042 significa scoprire una Fellowship autentica, vissuta a stretto contatto con il territorio e la natura. Dai weekend in baita alle gite in barca sul Lago di Como o Maggiore, fino alle degustazioni dei prodotti tipici locali, il senso di appartenenza qui è profondo e indissolubilmente legato alla bellezza dei luoghi.
+              Visitare il 2042 significa scoprire una Fellowship autentica, vissuta a stretto contatto con il territorio e la natura. Dai weekend in baita alle gite in barca sul Lago di Como, fino alle degustazioni dei prodotti tipici locali, il senso di appartenenza qui è profondo e indissolubilmente legato alla bellezza dei luoghi.
             </p>
             <p className="d-founding">
-              Dal 1968 serviamo al di sopra di ogni interesse personale. Il Distretto Rotaract 2042 riunisce 24 Club Rotaract nelle province di Bergamo, Como, Lecco, Monza e Brianza, Sondrio e Varese.
+              Dal 1968 serviamo al di sopra di ogni interesse personale. Il Distretto Rotaract 2042 riunisce 18 Club Rotaract nelle province di Bergamo, Como, Lecco, Monza e Brianza, Sondrio e Varese.
             </p>
           </div>
           <div className="vb-pillars">
@@ -234,8 +239,8 @@ const Distretto2042 = () => {
         </div>
         <div className="vb-numbers-grid">
           {[
-            { n: '24', l: 'CLUB', s: 'Rotaract sul territorio' },
-            { n: '487', l: 'SOCI', s: 'attivi under 30' },
+            { n: '18', l: 'CLUB', s: 'Rotaract sul territorio' },
+            { n: '260', l: 'SOCI', s: 'attivi under 30' },
             { n: '6', l: 'PROVINCE', s: 'BG · CO · LC · MB · SO · VA' },
             { n: '4', l: 'AREE', s: 'Laghi · Valtellina · Brianza · Bergamasca' },
           ].map((x, i) => (
@@ -271,17 +276,22 @@ const Distretto2042 = () => {
                 <div className="d-zone-name">{z.name}</div>
                 <div className="d-zone-prov">{z.prov}</div>
               </div>
+              <div className="d-zone-clubs">
+                {z.clubs.map((c) => (
+                  <span key={c} className="d-zone-club">{c}</span>
+                ))}
+              </div>
               <div className="d-zone-desc">{z.desc}</div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* ── STORIA & RICONOSCIMENTI ─────────────── */}
+      {/* ── STORIA & COLLABORAZIONI ─────────────── */}
       <section id="storia" className="d-awards">
         <div className="d-awards-head">
           <div className="vb-section-no">[ 04 ]</div>
-          <div className="vb-section-name">STORIA &amp; RICONOSCIMENTI</div>
+          <div className="vb-section-name">STORIA &amp; COLLABORAZIONI</div>
           <h2 className="d-awards-title">
             Una storia<br /><em>di fare e di costruire.</em>
           </h2>

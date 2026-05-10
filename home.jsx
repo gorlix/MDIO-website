@@ -187,7 +187,7 @@ const Home = () => {
         </div>
         <div className="vb-manifesto-main">
           <h2 className="vb-manifesto-title">
-            Cos'è il<br />Multidistretto.
+            Cos'è il nostro<br />Multidistretto?
           </h2>
           <div className="vb-manifesto-body">
             <p className="vb-manifesto-lede">
