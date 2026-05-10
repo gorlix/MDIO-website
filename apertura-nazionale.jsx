@@ -130,10 +130,10 @@ const AperturaNazionale = () => {
       <Header
         homeLink="./index.html"
         logoPath="assets/logo-mdio.jpeg"
-        ctaText="Iscriviti ora"
-        ctaLink="#pacchetti"
+        ctaText="Acquista i biglietti →"
+        ctaLink="shop.html?back=apertura-nazionale.html%23pacchetti"
       >
-        <a href="./index.html" onClick={(e) => { if (window.history.length > 1) { e.preventDefault(); window.history.back(); } }}>← MDIO</a>
+        <a href="./index.html">← MDIO</a>
         <a href="#programma">Programma</a>
         <a href="#pacchetti">Pacchetti</a>
         <a href="#info">Info pratiche</a>
@@ -164,7 +164,7 @@ const AperturaNazionale = () => {
               {' '}<strong>Sale Marasino</strong> per i lavori e il conviviale sul lago.
             </p>
             <div className="an-hero-actions">
-              <a href="#pacchetti" className="an-btn-primary">Scegli il pacchetto →</a>
+              <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-btn-primary">Acquista i biglietti →</a>
               <a href="#programma" className="an-btn-ghost">Programma completo</a>
             </div>
           </div>
@@ -314,7 +314,7 @@ const AperturaNazionale = () => {
           <div className="an-pack-hero-right">
             <div className="an-pack-price">TBD</div>
             <div className="an-pack-price-sub">Stay Tuned</div>
-            <a href="#pacchetti" className="an-pack-cta an-pack-cta--coming">In arrivo</a>
+            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta">Acquista →</a>
           </div>
         </div>
 
@@ -332,7 +332,7 @@ const AperturaNazionale = () => {
               <li>1 Notte in Hotel 4★</li>
               <li>Navette incluse</li>
             </ul>
-            <a href="#pacchetti" className="an-pack-cta an-pack-cta--coming">In arrivo</a>
+            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta">Acquista →</a>
           </div>
 
           <div className="an-pack">
@@ -347,7 +347,7 @@ const AperturaNazionale = () => {
               <li>1 Notte in Hotel 4★</li>
               <li>Navette incluse</li>
             </ul>
-            <a href="#pacchetti" className="an-pack-cta an-pack-cta--coming">In arrivo</a>
+            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta">Acquista →</a>
           </div>
 
           <div className="an-pack">
@@ -361,7 +361,7 @@ const AperturaNazionale = () => {
               <li>1 Notte in Hotel 4★ a Monza</li>
               <li>Navette incluse hotel ↔ autodromo</li>
             </ul>
-            <a href="#pacchetti" className="an-pack-cta an-pack-cta--coming">In arrivo</a>
+            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta">Acquista →</a>
           </div>
         </div>
 
@@ -394,7 +394,7 @@ const AperturaNazionale = () => {
               <span className="an-pack-desc-muted">Hotel e trasporti non inclusi.</span>
             </p>
             <div className="an-pack-guarantee">✓ Prezzo Bloccato</div>
-            <a href="#pacchetti" className="an-pack-cta an-pack-cta--coming">In arrivo</a>
+            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta">Acquista →</a>
           </div>
 
           <div className="an-pack an-pack--singolo">
@@ -408,7 +408,7 @@ const AperturaNazionale = () => {
               <span className="an-pack-desc-muted">Hotel e trasporti non inclusi.</span>
             </p>
             <div className="an-pack-guarantee">✓ Prezzo Bloccato</div>
-            <a href="#pacchetti" className="an-pack-cta an-pack-cta--coming">In arrivo</a>
+            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta">Acquista →</a>
           </div>
 
           <div className="an-pack an-pack--singolo">
@@ -422,7 +422,7 @@ const AperturaNazionale = () => {
               <span className="an-pack-desc-muted">Hotel e trasporti non inclusi.</span>
             </p>
             <div className="an-pack-guarantee">✓ Prezzo Bloccato</div>
-            <a href="#pacchetti" className="an-pack-cta an-pack-cta--coming">In arrivo</a>
+            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta">Acquista →</a>
           </div>
         </div>
 
@@ -528,7 +528,7 @@ const AperturaNazionale = () => {
             Tre giorni per aprire l'anno rotaractiano insieme,
             tra eventi, amicizia e ricordi che resteranno.
           </p>
-          <a href="#pacchetti" className="an-cta-final-btn">Iscriviti adesso →</a>
+          <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-cta-final-btn">Acquista i biglietti →</a>
         </div>
       </section>
 
@@ -576,7 +576,7 @@ const AperturaNazionale = () => {
                     ))}
                   </div>
                 </div>
-                <a href="#pacchetti" className="an-mod-cta">Acquista il biglietto →</a>
+                <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-mod-cta">Acquista il biglietto →</a>
               </div>
             </div>
           </React.Fragment>

@@ -112,7 +112,7 @@ const Distretto2050 = () => {
         ctaText="Apertura Nazionale 2026 →"
         ctaLink="../apertura-nazionale.html"
       >
-        <a href="../index.html" onClick={(e) => { if (window.history.length > 1) { e.preventDefault(); window.history.back(); } }}>← MDIO</a>
+        <a href="../index.html">← MDIO</a>
         <a href="#identita">Identità</a>
         <a href="#numeri">Numeri</a>
         <a href="#zone">Zone</a>
