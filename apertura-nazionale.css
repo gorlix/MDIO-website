@@ -1171,7 +1171,7 @@
 
 .an-pack-grid-2 {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
@@ -1179,3 +1179,197 @@
 @media (max-width: 767px) {
   .an-pack-grid-2 { grid-template-columns: 1fr; gap: 16px; }
 }
+
+/* === CLASSI AGGIUNTIVE === */
+
+/* Hero badge "primo evento diffuso" */
+.an-hero-badge {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--ink);
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 32px;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(230, 185, 128, 0.3);
+}
+
+/* Override margine hero-dates (il badge viene subito dopo) */
+.an-hero-dates { margin-bottom: 16px; }
+
+/* em nel countdown label (testo bianco non corsivo) */
+.an-countdown-em {
+  color: #fff;
+  font-style: normal;
+  font-family: inherit;
+}
+
+/* Intestazione sezioni di pacchetti */
+.an-pack-section-heading {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.an-pack-group-title {
+  font-family: 'Fraunces', serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0;
+  color: #fff;
+}
+.an-pack-group-title-sub {
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #cfc8b8;
+}
+.an-pack-group-title--singoli {
+  max-width: 1400px;
+  margin: 0 auto 32px;
+  border-top: 1px solid #444;
+  padding-top: 64px;
+}
+
+/* Hero pack (full weekend) — overrides contestuali */
+.an-pack-hero { padding: 48px 40px; }
+.an-pack-hero .an-pack-best {
+  left: 48px;
+  transform: none;
+  top: -14px;
+  font-size: 13px;
+  padding: 8px 24px;
+}
+.an-pack-hero .an-pack-dates { font-size: 15px; }
+.an-pack-hero .an-pack-name {
+  font-size: clamp(40px, 5vw, 64px);
+  margin: 8px 0 16px;
+}
+.an-pack-hero .an-pack-tag {
+  font-size: 18px;
+  color: var(--muted);
+  margin-bottom: 0;
+}
+.an-pack-hero .an-pack-includes { margin: 24px 0 0; }
+.an-pack-hero .an-pack-price {
+  font-size: clamp(64px, 8vw, 88px);
+  margin: 0 0 8px;
+  border-top: none;
+  padding-top: 0;
+}
+.an-pack-hero .an-pack-price-sub {
+  font-size: 15px;
+  margin-bottom: 32px;
+}
+.an-pack-hero .an-pack-cta {
+  font-size: 18px;
+  padding: 20px 48px;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Colonna destra del full weekend card */
+.an-pack-hero-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 1.5px solid #eae7e0;
+  padding-left: 48px;
+  min-height: 200px;
+}
+@media (max-width: 1023px) {
+  .an-pack-hero-right {
+    border-left: none;
+    border-top: 1.5px solid #eae7e0;
+    padding-left: 0;
+    padding-top: 32px;
+    min-height: auto;
+  }
+}
+
+/* Pack grid-2 — overrides contestuali */
+.an-pack-grid-2 .an-pack-name { font-size: 26px; }
+.an-pack-grid-2 .an-pack-price { font-size: 48px; }
+
+/* Banner logistica navette */
+.an-logistica-wrap {
+  max-width: 1400px;
+  margin: 0 auto 80px;
+}
+.an-logistica-banner {
+  background: rgba(200, 23, 74, 0.15);
+  border: 1.5px solid var(--cranberry);
+  padding: 24px;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.an-logistica-icon {
+  font-size: 40px;
+  flex-shrink: 0;
+}
+.an-logistica-text {
+  font-size: 15px;
+  line-height: 1.5;
+}
+.an-logistica-label {
+  display: block;
+  color: var(--gold);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+/* Grid pacchetti bigiorno (3 colonne, stesso layout dei singoli) */
+.an-pack-grid--experience {
+  max-width: 1400px;
+  margin: 0 auto 40px;
+}
+
+/* Biglietti singoli */
+.an-pack-grid--singoli { margin-bottom: 80px; }
+.an-pack--singolo { padding: 28px 24px; }
+.an-pack--singolo .an-pack-name { font-size: 24px; }
+.an-pack--singolo .an-pack-tag { margin-bottom: 16px; }
+.an-pack--singolo .an-pack-price {
+  font-size: 40px;
+  margin: 0 0 4px;
+  padding-top: 16px;
+}
+.an-pack--singolo .an-pack-price-sub { margin-bottom: 16px; }
+
+.an-pack-desc {
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: #2a2620;
+  margin-bottom: 24px;
+  flex: 1;
+}
+.an-pack-desc-muted { color: #b0aa9d; }
+
+.an-pack-guarantee {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--cranberry);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* CTA "In arrivo" (grigia, disabilitata visivamente) */
+.an-pack-cta--coming {
+  background: #444;
+  cursor: default;
+  pointer-events: none;
+}
+.an-pack-cta--coming:hover { background: #444; }

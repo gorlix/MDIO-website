@@ -56,16 +56,16 @@ const AperturaNazionale = () => {
       color: 'royal',
       featured: true,
       bullets: [
-        'Cena di gala + tour della pista in bus con guida ufficiale',
-        'Salita sul podio + DJ set + team building pit stop',
+        'Lavori nazionali mattutini — Sala Maddalena, Monza',
+        'Cena di gala all\'Autodromo + DJ set',
         'Navette incluse — Hotel Falcone 4★ Monza centro',
       ],
       timeline: [
-        { t: '10:00', title: 'City tour di Monza', d: 'Gratuito, con guida locale. Visita al centro storico, Villa Reale e curiosità della città.' },
-        { t: '14:00', title: 'Attività opzionali pomeridiane', d: 'Team building pit stop all\'autodromo (cambio gomme su auto da corsa) · Masterclass Rinascente one-to-one (profumi, make-up).' },
-        { t: '17:30', title: 'Navetta → Autodromo', d: 'Partenza dall\'Hotel Falcone. Tour della pista in bus con guida ufficiale. Salita sul podio per le foto ricordo.' },
+        { t: '10:00', title: 'Lavori nazionali', d: 'Sala Maddalena · Via Santa Maddalena, 7, Monza (Istituto Scolastico "T. Confalonieri", centro città).' },
+        { t: '14:00', title: 'Attività pomeridiane facoltative', d: 'Coming soon — pacchetti di attività opzionali in corso di definizione.' },
+        { t: '18:30', title: 'Navetta → Autodromo', d: 'Partenza indicativa dall\'Hotel Falcone.' },
         { t: '19:00', title: 'Aperitivo standing', d: 'Nell\'area box con auto da esposizione dello sponsor. DJ set. Allestimento floreale.' },
-        { t: '20:30', title: 'Cena di gala', d: 'Antipasto · Primo · Secondo · Dolce. + drink incluso.' },
+        { t: '20:00', title: 'Cena di gala', d: 'Antipasto · Primo · Secondo · Dolce. Vino senza limiti + drink incluso. Mise en place curata.' },
       ],
       info: [
         { l: 'Prezzo', v: 'TBD', s: 'Prezzo unico' },
@@ -78,26 +78,24 @@ const AperturaNazionale = () => {
       id: 'g3',
       num: '03',
       city: 'Sale Marasino',
-      sub: 'Lavori & conviviale',
+      sub: 'Conviviale sul Lago',
       tag: 'Chiusura sul Lago',
       date: 'Dom 20 Set',
       img: 'assets/2050-10-Brescia.jpeg',
       color: 'gold',
       bullets: [
-        'Lavori Distrettuale 2050',
         'Relatore d\'eccezione',
         'Pranzo conviviale sul Lago d\'Iseo',
+        'Chiusura dell\'Apertura Nazionale 2026',
       ],
       timeline: [
-        { t: '10:00', title: 'Lavori ufficiali', d: 'Inizio Session Lavori Distretto 2050.' },
-        { t: '12:30', title: 'Inizio Conviviale', d: 'Inizio della giornata conviviale sul Lago d\'Iseo.' },
-        { t: '13:30', title: 'Conviviale con relatore d\'eccezione', d: 'Pranzo con ospite speciale. Un momento unico sul Lago d\'Iseo.' },
+        { t: '13:00', title: 'Conviviale con relatore d\'eccezione', d: 'Pranzo con ospite speciale. Un momento unico sul Lago d\'Iseo.' },
         { t: '16:00', title: 'Chiusura & saluti', d: 'Arrivederci al prossimo Nazionale. Rientro autonomo.' },
       ],
       info: [
         { l: 'Location', v: 'Lago d\'Iseo', s: 'Provincia di Brescia' },
         { l: 'Da Monza', v: '~1h', s: 'in auto o treno' },
-        { l: 'Ospite', v: 'Seguiranno Sorprese'},
+        { l: 'Ospite', v: 'Seguiranno Sorprese' },
         { l: 'Prezzo', v: 'TBD', s: 'Prezzo unico' },
       ],
     },
@@ -155,11 +153,11 @@ const AperturaNazionale = () => {
               <em>Nazionale</em><br />
               2026.
             </h1>
-            <div className="an-hero-dates" style={{ marginBottom: '16px' }}>18 · 19 · 20 Settembre</div>
-            <div style={{ display: 'inline-block', background: 'var(--gold)', color: 'var(--ink)', padding: '8px 20px', borderRadius: '999px', fontSize: '14px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '32px', border: '1px solid rgba(0,0,0,0.1)', boxShadow: '0 4px 12px rgba(230, 185, 128, 0.3)' }}>
+            <div className="an-hero-dates">18 · 19 · 20 Settembre</div>
+            <div className="an-hero-badge">
               Il primo evento nazionale diffuso in 3 distretti
             </div>
-            <p className="an-hero-lede" style={{ marginTop: 0 }}>
+            <p className="an-hero-lede">
               Tre giorni per aprire l'anno rotaractiano <em>tutti insieme</em>:
               {' '}<strong>Milano</strong> tra danze e profumi orientali,
               {' '}<strong>Monza</strong> al gala dell'Autodromo,
@@ -197,7 +195,7 @@ const AperturaNazionale = () => {
       <section className="an-countdown">
         <div className="an-countdown-inner">
           <div className="an-countdown-label">
-            Manca poco all'apertura <em style={{ color: '#fff', fontStyle: 'normal' }}>nazionale</em>
+            Manca poco all'apertura <em className="an-countdown-em">nazionale</em>
           </div>
           <div className="an-countdown-numbers">
             <Countdown />
@@ -290,124 +288,141 @@ const AperturaNazionale = () => {
           </div>
         </div>
 
-        <div style={{ maxWidth: '1400px', margin: '0 auto', paddingBottom: '40px' }}>
-          <h3 style={{ fontFamily: 'Fraunces, serif', fontSize: '36px', margin: 0 }}>
-            Pacchetti <em>Experience</em> <span style={{ fontSize: '18px', fontFamily: 'Inter, sans-serif', fontStyle: 'normal', color: '#cfc8b8' }}>(Multi-giorno con Hotel)</span>
+        {/* ── EXPERIENCE: titolo ── */}
+        <div className="an-pack-section-heading">
+          <h3 className="an-pack-group-title">
+            Pacchetti <em>Experience</em>{' '}
+            <span className="an-pack-group-title-sub">(Multi-giorno con Hotel)</span>
           </h3>
         </div>
 
-        <div className="an-pack-hero an-pack featured" style={{ padding: '48px 40px' }}>
-          <div className="an-pack-best" style={{ left: '48px', transform: 'none', top: '-14px', fontSize: '13px', padding: '8px 24px' }}>Best Seller Assoluto</div>
-
+        {/* ── EXPERIENCE: hero (3 giorni) ── */}
+        <div className="an-pack-hero an-pack featured">
+          <div className="an-pack-best an-pack-best--hero">Best Seller Assoluto</div>
           <div>
-            <div className="an-pack-dates" style={{ fontSize: '15px' }}>2 NOTTI + 3 GIORNI</div>
-            <h3 className="an-pack-name" style={{ fontSize: 'clamp(40px, 5vw, 64px)', margin: '8px 0 16px' }}>Full<br /><em>Weekend</em></h3>
-            <div className="an-pack-tag" style={{ fontSize: '18px', color: 'var(--muted)', marginBottom: 0 }}>Milano, Monza e Iseo</div>
-            <ul className="an-pack-includes" style={{ margin: 0, marginTop: '24px' }}>
-              <li>Cena Venerdì (Milano)</li>
-              <li>Cena Gala Sabato (Monza)</li>
-              <li>Pranzo Domenica (Iseo)</li>
+            <div className="an-pack-dates">18 · 19 · 20 SET · 3 GIORNI</div>
+            <h3 className="an-pack-name">Sotto il cielo<br />di <em>Lombardia</em></h3>
+            <div className="an-pack-tag">Milano · Monza · Lago d'Iseo</div>
+            <ul className="an-pack-includes">
+              <li>Serata Mille e una Notte (Milano)</li>
+              <li>Gala all'Autodromo (Monza)</li>
+              <li>Pranzo conviviale sul Lago (Iseo)</li>
               <li>2 Notti in Hotel 4★ a Monza</li>
               <li>Navette incluse tra hotel ed eventi</li>
             </ul>
           </div>
-
-          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', borderLeft: '1.5px solid #eae7e0', paddingLeft: '48px', minHeight: '200px' }}>
-            <div className="an-pack-price" style={{ fontSize: 'clamp(64px, 8vw, 88px)', margin: '0 0 8px', borderTop: 'none', paddingTop: 0 }}>TBD</div>
-            <div className="an-pack-price-sub" style={{ fontSize: '15px', marginBottom: '32px' }}>Stay Tuned</div>
-            <a href="#pacchetti" className="an-pack-cta" style={{ background: '#444', fontSize: '18px', padding: '20px 48px', display: 'inline-block', width: '100%' }}>In arrivo</a>
+          <div className="an-pack-hero-right">
+            <div className="an-pack-price">TBD</div>
+            <div className="an-pack-price-sub">Stay Tuned</div>
+            <a href="#pacchetti" className="an-pack-cta an-pack-cta--coming">In arrivo</a>
           </div>
         </div>
 
-        <div className="an-pack-grid-2" style={{ marginBottom: '40px' }}>
-          {/* Ven & Sab */}
+        {/* ── EXPERIENCE: 3 pacchetti bigiorno ── */}
+        <div className="an-pack-grid an-pack-grid--experience">
           <div className="an-pack">
-            <div className="an-pack-dates">2 NOTTI</div>
-            <h3 className="an-pack-name" style={{ fontSize: '26px' }}>Venerdì &<br /><em>Sabato</em></h3>
-            <div className="an-pack-tag">Milano + Monza</div>
-            <div className="an-pack-price" style={{ fontSize: '48px' }}>TBD</div>
+            <div className="an-pack-dates">18 · 19 SET</div>
+            <h3 className="an-pack-name">Aladino<br /><em>in pista</em></h3>
+            <div className="an-pack-tag">Venerdì + Sabato</div>
+            <div className="an-pack-price">TBD</div>
             <div className="an-pack-price-sub">Stay Tuned</div>
             <ul className="an-pack-includes">
-              <li>Cena Venerdì (Milano)</li>
-              <li>Cena Gala Sabato (Monza)</li>
-              <li>2 Notti in Hotel 4★</li>
-              <li>Navette incluse</li>
-            </ul>
-            <a href="#pacchetti" className="an-pack-cta" style={{ background: '#444' }}>In arrivo</a>
-          </div>
-
-          {/* Sab & Dom */}
-          <div className="an-pack">
-            <div className="an-pack-dates">1 NOTTE + 2 GIORNI</div>
-            <h3 className="an-pack-name" style={{ fontSize: '26px' }}>Sabato &<br /><em>Domenica</em></h3>
-            <div className="an-pack-tag">Monza + Iseo</div>
-            <div className="an-pack-price" style={{ fontSize: '48px' }}>TBD</div>
-            <div className="an-pack-price-sub">Stay Tuned</div>
-            <ul className="an-pack-includes">
-              <li>Cena Gala Sabato (Monza)</li>
-              <li>Pranzo Domenica (Iseo)</li>
+              <li>Serata Mille e una Notte (Milano)</li>
+              <li>Gala all'Autodromo (Monza)</li>
               <li>1 Notte in Hotel 4★</li>
               <li>Navette incluse</li>
             </ul>
-            <a href="#pacchetti" className="an-pack-cta" style={{ background: '#444' }}>In arrivo</a>
+            <a href="#pacchetti" className="an-pack-cta an-pack-cta--coming">In arrivo</a>
+          </div>
+
+          <div className="an-pack">
+            <div className="an-pack-dates">19 · 20 SET</div>
+            <h3 className="an-pack-name">3…2…1…<br /><em>lancio</em></h3>
+            <div className="an-pack-tag">Sabato + Domenica</div>
+            <div className="an-pack-price">TBD</div>
+            <div className="an-pack-price-sub">Stay Tuned</div>
+            <ul className="an-pack-includes">
+              <li>Gala all'Autodromo (Monza)</li>
+              <li>Pranzo conviviale sul Lago (Iseo)</li>
+              <li>1 Notte in Hotel 4★</li>
+              <li>Navette incluse</li>
+            </ul>
+            <a href="#pacchetti" className="an-pack-cta an-pack-cta--coming">In arrivo</a>
+          </div>
+
+          <div className="an-pack">
+            <div className="an-pack-dates">19 SET + HOTEL</div>
+            <h3 className="an-pack-name"><em>Pit</em><br />Stop</h3>
+            <div className="an-pack-tag">Sabato + notte in hotel</div>
+            <div className="an-pack-price">TBD</div>
+            <div className="an-pack-price-sub">Stay Tuned</div>
+            <ul className="an-pack-includes">
+              <li>Gala all'Autodromo (Monza)</li>
+              <li>1 Notte in Hotel 4★ a Monza</li>
+              <li>Navette incluse hotel ↔ autodromo</li>
+            </ul>
+            <a href="#pacchetti" className="an-pack-cta an-pack-cta--coming">In arrivo</a>
           </div>
         </div>
 
-        <div style={{ maxWidth: '1400px', margin: '0 auto 80px' }}>
-          <div style={{ background: 'rgba(200, 23, 74, 0.15)', border: '1.5px solid var(--cranberry)', padding: '24px', borderRadius: '8px', color: '#fff', display: 'flex', alignItems: 'center', gap: '24px' }}>
-            <div style={{ fontSize: '40px', flexShrink: 0 }}>🚌</div>
-            <div style={{ fontSize: '15px', lineHeight: 1.5 }}>
-              <strong style={{ color: 'var(--gold)', letterSpacing: '1px', textTransform: 'uppercase', fontSize: '13px', display: 'block', marginBottom: '4px' }}>Logistica</strong>
+        {/* ── Banner navette ── */}
+        <div className="an-logistica-wrap">
+          <div className="an-logistica-banner">
+            <div className="an-logistica-icon">🚌</div>
+            <div className="an-logistica-text">
+              <strong className="an-logistica-label">Logistica</strong>
               <strong>Il servizio navetta è sempre incluso</strong> per chi acquista i pacchetti comprensivi di hotel! Non dovrai preoccuparti degli spostamenti tra gli eventi e la struttura.
             </div>
           </div>
         </div>
 
-        <h3 style={{ fontFamily: 'Fraunces, serif', fontSize: '36px', marginBottom: '32px', maxWidth: '1400px', margin: '0 auto 32px', borderTop: '1px solid #444', paddingTop: '64px' }}>
+        {/* ── SINGOLI: titolo ── */}
+        <h3 className="an-pack-group-title an-pack-group-title--singoli">
           Biglietti Singoli
         </h3>
 
-        <div className="an-pack-grid" style={{ marginBottom: '80px' }}>
-          {/* Singolo Venerdì */}
-          <div className="an-pack" style={{ padding: '28px 24px' }}>
+        {/* ── SINGOLI: 3 giornate ── */}
+        <div className="an-pack-grid an-pack-grid--singoli">
+          <div className="an-pack an-pack--singolo">
             <div className="an-pack-dates">18 SET · UN GIORNO</div>
-            <h3 className="an-pack-name" style={{ fontSize: '24px' }}>Solo <em>Milano</em></h3>
-            <div className="an-pack-tag" style={{ marginBottom: '16px' }}>Serata Mille e una Notte</div>
-            <div className="an-pack-price" style={{ fontSize: '40px', margin: '0 0 4px', paddingTop: '16px' }}>TBD</div>
-            <div className="an-pack-price-sub" style={{ marginBottom: '16px' }}>Stay Tuned</div>
-            <p style={{ fontSize: '14.5px', lineHeight: 1.5, color: '#2a2620', marginBottom: '24px', flex: 1 }}>
-              Ingresso ad Agrabah, cena con live show orientale e DJ set esclusivo. Navette di rientro disponibili.<br /><br /><span style={{ color: '#b0aa9d' }}>Hotel non incluso.</span>
+            <h3 className="an-pack-name">Le mille<br />ed <em>una notte</em></h3>
+            <div className="an-pack-tag">Venerdì · Milano</div>
+            <div className="an-pack-price">TBD</div>
+            <div className="an-pack-price-sub">Stay Tuned</div>
+            <p className="an-pack-desc">
+              Ingresso ad Agrabah, cena con live show orientale e DJ set esclusivo. Navette di rientro disponibili.<br /><br />
+              <span className="an-pack-desc-muted">Hotel e trasporti non inclusi.</span>
             </p>
-            <div className="an-pack-guarantee" style={{ fontSize: '11px', textAlign: 'center', marginBottom: '10px', color: '#c8174a', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px' }}>✓ Prezzo Bloccato</div>
-            <a href="#pacchetti" className="an-pack-cta" style={{ background: '#444' }}>In arrivo</a>
+            <div className="an-pack-guarantee">✓ Prezzo Bloccato</div>
+            <a href="#pacchetti" className="an-pack-cta an-pack-cta--coming">In arrivo</a>
           </div>
 
-          {/* Singolo Sabato */}
-          <div className="an-pack" style={{ padding: '28px 24px' }}>
-            <div className="an-pack-dates">19 SET · GALA</div>
-            <h3 className="an-pack-name" style={{ fontSize: '24px' }}>Solo <em>Monza</em></h3>
-            <div className="an-pack-tag" style={{ marginBottom: '16px' }}>Gala all'Autodromo</div>
-            <div className="an-pack-price" style={{ fontSize: '40px', margin: '0 0 4px', paddingTop: '16px' }}>TBD</div>
-            <div className="an-pack-price-sub" style={{ marginBottom: '16px' }}>Stay Tuned</div>
-            <p style={{ fontSize: '14.5px', lineHeight: 1.5, color: '#2a2620', marginBottom: '24px', flex: 1 }}>
-              Tour della pista, aperitivo standing nell'area box, cena di gala 4 portate e DJ set. Navetta inclusa dall'Hotel Falcone.<br /><br /><span style={{ color: '#b0aa9d' }}>Hotel non incluso.</span>
+          <div className="an-pack an-pack--singolo">
+            <div className="an-pack-dates">19 SET · UN GIORNO</div>
+            <h3 className="an-pack-name">Il tempio<br />della <em>velocità</em></h3>
+            <div className="an-pack-tag">Sabato · Monza</div>
+            <div className="an-pack-price">TBD</div>
+            <div className="an-pack-price-sub">Stay Tuned</div>
+            <p className="an-pack-desc">
+              Tour della pista, aperitivo standing nell'area box, cena di gala 4 portate e DJ set. Navetta inclusa dall'Hotel Falcone.<br /><br />
+              <span className="an-pack-desc-muted">Hotel e trasporti non inclusi.</span>
             </p>
-            <div className="an-pack-guarantee" style={{ fontSize: '11px', textAlign: 'center', marginBottom: '10px', color: '#c8174a', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px' }}>✓ Prezzo Bloccato</div>
-            <a href="#pacchetti" className="an-pack-cta" style={{ background: '#444' }}>In arrivo</a>
+            <div className="an-pack-guarantee">✓ Prezzo Bloccato</div>
+            <a href="#pacchetti" className="an-pack-cta an-pack-cta--coming">In arrivo</a>
           </div>
 
-          {/* Singolo Domenica */}
-          <div className="an-pack" style={{ padding: '28px 24px' }}>
-            <div className="an-pack-dates">20 SET · CONVIVIALE</div>
-            <h3 className="an-pack-name" style={{ fontSize: '24px' }}>Solo <em>Iseo</em></h3>
-            <div className="an-pack-tag" style={{ marginBottom: '16px' }}>Chiusura sul Lago</div>
-            <div className="an-pack-price" style={{ fontSize: '40px', margin: '0 0 4px', paddingTop: '16px' }}>TBD</div>
-            <div className="an-pack-price-sub" style={{ marginBottom: '16px' }}>Stay Tuned</div>
-            <p style={{ fontSize: '14.5px', lineHeight: 1.5, color: '#2a2620', marginBottom: '24px', flex: 1 }}>
-              Sessione dei Lavori Ufficiali, Cerimonia di Passaggio di Consegne, relatore d'eccezione e pranzo sul Lago d'Iseo.<br /><br /><span style={{ color: '#b0aa9d' }}>Hotel e trasporti non inclusi.</span>
+          <div className="an-pack an-pack--singolo">
+            <div className="an-pack-dates">20 SET · UN GIORNO</div>
+            <h3 className="an-pack-name">Un lago<br />di <em>stelle</em></h3>
+            <div className="an-pack-tag">Domenica · Sale Marasino</div>
+            <div className="an-pack-price">TBD</div>
+            <div className="an-pack-price-sub">Stay Tuned</div>
+            <p className="an-pack-desc">
+              Relatore d'eccezione e pranzo conviviale sul Lago d'Iseo.<br /><br />
+              <span className="an-pack-desc-muted">Hotel e trasporti non inclusi.</span>
             </p>
-            <div className="an-pack-guarantee" style={{ fontSize: '11px', textAlign: 'center', marginBottom: '10px', color: '#c8174a', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px' }}>✓ Prezzo Bloccato</div>
-            <a href="#pacchetti" className="an-pack-cta" style={{ background: '#444' }}>In arrivo</a>
+            <div className="an-pack-guarantee">✓ Prezzo Bloccato</div>
+            <a href="#pacchetti" className="an-pack-cta an-pack-cta--coming">In arrivo</a>
           </div>
         </div>
       </section>
