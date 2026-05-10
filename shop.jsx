@@ -36,7 +36,10 @@ const TicketTailorWidget = () => {
   return <div className="tt-widget" ref={ref} />;
 };
 
-const Shop = () => (
+const Shop = () => {
+  const backUrl = new URLSearchParams(window.location.search).get('back') || 'apertura-nazionale.html';
+
+  return (
   <div className="vb-root shop-root">
     <Header
       homeLink="index.html"
@@ -44,7 +47,7 @@ const Shop = () => (
       ctaText="Apertura Nazionale →"
       ctaLink="apertura-nazionale.html"
     >
-      <a href="apertura-nazionale.html" onClick={(e) => { if (window.history.length > 1) { e.preventDefault(); window.history.back(); } }}>← Torna indietro</a>
+      <a href={backUrl}>← Torna indietro</a>
     </Header>
 
     <section className="shop-hero">
@@ -72,7 +75,8 @@ const Shop = () => (
 
     <Footer />
   </div>
-);
+  );
+};
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
