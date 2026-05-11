@@ -88,7 +88,7 @@ const AperturaNazionale = () => {
       sub: 'Conviviale sul Lago',
       tag: 'Chiusura sul Lago',
       date: 'Dom 20 Set',
-      img: 'assets/2050-10-Brescia.jpeg',
+      img: 'assets/2050-01-Iseo.jpeg',
       color: 'gold',
       bullets: [
         'Relatori d\'eccezione',
@@ -182,7 +182,7 @@ const AperturaNazionale = () => {
             <div className="an-hero-imagewrap">
               <img src="assets/2041-05-Milano.jpeg" alt="" className="an-hero-img an-hero-img-1" />
               <img src="assets/2042-13-Monza.jpeg" alt="" className="an-hero-img an-hero-img-2" />
-              <img src="assets/2050-10-Brescia.jpeg" alt="" className="an-hero-img an-hero-img-3" />
+              <img src="assets/2050-01-Iseo.jpeg" alt="" className="an-hero-img an-hero-img-3" />
               <div className="an-hero-cit-tag an-hero-cit-tag-1">
                 <span>GIORNO 01</span>
                 <span>Milano</span>
