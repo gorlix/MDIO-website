@@ -91,17 +91,19 @@ const AperturaNazionale = () => {
       img: 'assets/2050-10-Brescia.jpeg',
       color: 'gold',
       bullets: [
-        'Relatore d\'eccezione',
+        'Relatori d\'eccezione',
         'Pranzo conviviale sul Lago d\'Iseo',
-        'Chiusura dell\'Apertura Nazionale 2026',
+        'Chiusura ufficiale dell\'Apertura Nazionale',
       ],
       timeline: [
-        { t: '13:00', title: 'Conviviale con relatore d\'eccezione', d: 'Pranzo con ospite speciale. Un momento unico sul Lago d\'Iseo.' },
-        { t: '16:00', title: 'Chiusura & saluti', d: 'Arrivederci al prossimo Nazionale. Rientro autonomo.' },
+        { t: '12:30', title: 'Arrivo e accoglienza', d: 'Apri gli occhi e preparati a contemplare la bellezza di un panorama mozzafiato.' },
+        { t: 'A seguire', title: 'Conviviale con relatori d\'eccezione', d: 'Coccolato dal dolce bisbiglio del Lago d\'Iseo, ti riempirai di entusiasmo interagendo con persone dalle vite eccezionali.' },
+        { t: 'In chiusura', title: 'Chiusura ufficiale dell\'Apertura Nazionale', d: 'Vedrai passare le consegne al Distretto Rotaract 2071 per l\'organizzazione del S.I.R.D.E.' },
       ],
       info: [
         { l: 'Location', v: 'Lago d\'Iseo', s: 'Provincia di Brescia' },
         { l: 'Da Monza', v: '~1h', s: 'in auto o treno' },
+        { l: 'Navette', v: 'Incluse', s: 'da e per l\'albergo' },
         { l: 'Ospite', v: 'Seguiranno Sorprese' },
         { l: 'Prezzo', v: 'TBD', s: 'Prezzo unico' },
       ],
