@@ -43,6 +43,7 @@ const Home = () => {
       accent: '#ffd54a',
       claim: 'Dove l\'energia della metropoli incontra il servizio.',
       zone: 'Comprende esclusivamente l\'Area Metropolitana di Milano.',
+      zones: ['CITTÀ DI MILANO'],
       cities: ['Milano'],
       clubs: 13,
       soci: 350,
@@ -60,6 +61,7 @@ const Home = () => {
       accent: '#7eb7ff',
       claim: 'Dalle Alpi alla Brianza, una rete tra laghi, valli e città d\'arte.',
       zone: 'Bergamo · Como · Lecco · Monza Brianza · Sondrio · Varese + provincia MI (escl. 2041).',
+      zones: ['BRIANTEA', 'LARIANA', 'OLONA', 'OROBICA'],
       cities: ['Bergamo', 'Como', 'Lecco', 'Monza B.', 'Sondrio', 'Varese'],
       clubs: 18,
       soci: 260,
@@ -77,6 +79,7 @@ const Home = () => {
       accent: '#a4174c',
       claim: 'Francigena, Leonessa, Navigli e Padana: dalla Lombardia all\'Emilia.',
       zone: 'Brescia · Cremona · Lodi · Mantova · Pavia · Piacenza + alcuni comuni Città M. di MI.',
+      zones: ['FRANCIGENA', 'LEONESSA', 'NAVIGLI', 'PADANA'],
       cities: ['Brescia', 'Cremona', 'Lodi', 'Mantova', 'Pavia', 'Piacenza'],
       clubs: 30,
       soci: 403,
@@ -273,13 +276,10 @@ const Home = () => {
                 <h3 className="vb-dist-city">{d.city}</h3>
                 <p className="vb-dist-claim">{d.claim}</p>
                 <div className="vb-dist-zone">{d.zone}</div>
-                {d.n === '2050' && (
+                {d.zones && (
                   <div className="vb-dist-zones">
-                    <span>MACRO-ZONE:</span>
-                    <span>FRANCIGENA</span>
-                    <span>LEONESSA</span>
-                    <span>NAVIGLI</span>
-                    <span>PADANA</span>
+                    <span>ZONE:</span>
+                    {d.zones.map((z) => <span key={z}>{z}</span>)}
                   </div>
                 )}
                 <div className="vb-dist-cities">

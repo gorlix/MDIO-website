@@ -4,7 +4,6 @@ import './globals.css';
 import './home.css';
 import './shop.css';
 import CookieBanner from './components/CookieBanner';
-import Countdown from './components/Countdown';
 import Footer from './components/Footer';
 import Header from './components/Header';
 
@@ -81,13 +80,20 @@ const Shop = () => {
         <div className="shop-soon-inner">
           <div className="shop-soon-eyebrow">— Apertura vendite</div>
           <h2 className="shop-soon-title">
-            Le vendite aprono<br /><em>il 19 maggio.</em>
+            Stiamo arrivando.<br /><em>Ti faremo sapere.</em>
           </h2>
           <p className="shop-soon-sub">
-            Ci stiamo preparando per accoglierti al meglio.<br />
-            Torna tra poco: ci aspetta un'apertura rotaractiana indimenticabile.
+            Le vendite apriranno a breve.<br />
+            Seguici su Instagram per essere il primo a saperlo.
           </p>
-          <Countdown targetDate="2026-05-19T10:00:00" />
+          <a
+            href="https://www.instagram.com/multidistrettolombardo/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shop-soon-btn shop-soon-btn--ig"
+          >
+            Seguici su Instagram →
+          </a>
           <p className="shop-soon-cta-label">Nel frattempo, scopri il programma completo →</p>
           <a href="apertura-nazionale.html" className="shop-soon-btn">Scopri l'Apertura Nazionale</a>
         </div>
