@@ -338,7 +338,7 @@ const AperturaNazionale = () => {
             <ul className="an-pack-includes">
               <li>Serata Mille e una Notte (Milano)</li>
               <li>Gala all'Autodromo (Monza)</li>
-              <li>1 Notte in Hotel 4★</li>
+              <li>2 Notti in Hotel 4★</li>
               <li>Navette incluse</li>
             </ul>
             <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta">Acquista →</a>
