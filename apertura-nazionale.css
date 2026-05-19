@@ -1481,3 +1481,9 @@
   .an-activity-card { min-height: 110px; padding: 20px 16px; }
   .an-activity-name { font-size: 18px; }
 }
+
+/* ── Stato "apertura a breve" ── */
+.an-soon {
+  opacity: 0.55;
+  filter: grayscale(0.5);
+}

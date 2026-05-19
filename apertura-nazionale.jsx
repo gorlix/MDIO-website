@@ -46,7 +46,7 @@ const AperturaNazionale = () => {
         { t: '02:00', title: 'Navette di rientro', d: 'Navette disponibili verso le 2:00 circa per chi alloggia negli hotel.' },
       ],
       info: [
-        { l: 'Prezzo', v: 'TBD' },
+        { l: 'Prezzo', v: '€80', s: 'biglietto singolo' },
         { l: 'Posti', v: 'Limitati', s: 'su prenotazione' },
         { l: 'Come arrivare', v: 'Auto o mezzi', s: 'Tibaldi-Bocconi, bus 65' },
         { l: 'Dress code', v: 'Mille e una notte', s: 'tocco arabeggiante' },
@@ -75,7 +75,7 @@ const AperturaNazionale = () => {
         { t: '20:00', title: 'Cena di gala', d: 'Antipasto · Primo · Secondo · Dolce. Vino senza limiti + drink incluso. Mise en place curata.' },
       ],
       info: [
-        { l: 'Prezzo', v: 'TBD', s: 'Prezzo unico' },
+        { l: 'Prezzo', v: '€155', s: 'biglietto singolo serata' },
         { l: 'Hotel', v: 'Falcone 4★', s: 'Monza centro' },
         { l: 'Trasporti', v: 'Navette incluse', s: 'hotel ↔ autodromo' },
         { l: 'Da Milano', v: '15 min', s: 'in treno da Centrale' },
@@ -105,7 +105,7 @@ const AperturaNazionale = () => {
         { l: 'Da Monza', v: '~1h', s: 'in auto o treno' },
         { l: 'Navette', v: 'Incluse', s: 'da e per l\'albergo' },
         { l: 'Ospite', v: 'Seguiranno Sorprese' },
-        { l: 'Prezzo', v: 'TBD', s: 'Prezzo unico' },
+        { l: 'Prezzo', v: '€55', s: 'biglietto singolo' },
       ],
     },
   ];
@@ -113,7 +113,7 @@ const AperturaNazionale = () => {
   const faq = [
     {
       q: 'Posso partecipare a un solo giorno?',
-      a: 'Certo. Puoi scegliere i Biglietti Singoli per partecipare solo alle singole giornate: Milano (TBD), Monza (TBD) e Iseo (TBD). Oppure puoi scegliere uno dei Pacchetti Experience con hotel incluso.',
+      a: 'Certo. Puoi scegliere i Biglietti Singoli per partecipare solo alle singole giornate: Milano (€80), Monza (€155) e Iseo (€55). Oppure puoi scegliere uno dei Pacchetti Experience con hotel incluso.',
     },
     {
       q: 'L\'hotel è incluso nel pacchetto?',
@@ -139,7 +139,7 @@ const AperturaNazionale = () => {
       <Header
         homeLink="./index.html"
         logoPath="assets/logo-mdio.jpeg"
-        ctaText="Acquista i biglietti →"
+        ctaText="Apertura a breve !"
         ctaLink="shop.html?back=apertura-nazionale.html%23pacchetti"
       >
         <a href="./index.html">← MDIO</a>
@@ -173,7 +173,7 @@ const AperturaNazionale = () => {
               {' '}<strong>Sale Marasino</strong> per i lavori e il conviviale sul lago.
             </p>
             <div className="an-hero-actions">
-              <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-btn-primary">Acquista i biglietti →</a>
+              <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-btn-primary an-soon">Apertura a breve !</a>
               <a href="#programma" className="an-btn-ghost">Programma completo</a>
             </div>
           </div>
@@ -321,9 +321,9 @@ const AperturaNazionale = () => {
             </ul>
           </div>
           <div className="an-pack-hero-right">
-            <div className="an-pack-price">TBD</div>
-            <div className="an-pack-price-sub">Stay Tuned</div>
-            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta">Acquista →</a>
+            <div className="an-pack-price">€435</div>
+            <div className="an-pack-price-sub">a persona</div>
+            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta an-soon">Apertura a breve !</a>
           </div>
         </div>
 
@@ -333,44 +333,44 @@ const AperturaNazionale = () => {
             <div className="an-pack-dates">18 · 19 SET</div>
             <h3 className="an-pack-name">Aladino<br /><em>in pista</em></h3>
             <div className="an-pack-tag">Venerdì + Sabato</div>
-            <div className="an-pack-price">TBD</div>
-            <div className="an-pack-price-sub">Stay Tuned</div>
+            <div className="an-pack-price">€380</div>
+            <div className="an-pack-price-sub">a persona</div>
             <ul className="an-pack-includes">
               <li>Serata Mille e una Notte (Milano)</li>
               <li>Gala all'Autodromo (Monza)</li>
               <li>2 Notti in Hotel 4★</li>
               <li>Navette incluse</li>
             </ul>
-            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta">Acquista →</a>
+            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta an-soon">Apertura a breve !</a>
           </div>
 
           <div className="an-pack">
             <div className="an-pack-dates">19 · 20 SET</div>
             <h3 className="an-pack-name">3…2…1…<br /><em>lancio</em></h3>
             <div className="an-pack-tag">Sabato + Domenica</div>
-            <div className="an-pack-price">TBD</div>
-            <div className="an-pack-price-sub">Stay Tuned</div>
+            <div className="an-pack-price">€285</div>
+            <div className="an-pack-price-sub">a persona</div>
             <ul className="an-pack-includes">
               <li>Gala all'Autodromo (Monza)</li>
               <li>Pranzo conviviale sul Lago (Iseo)</li>
               <li>1 Notte in Hotel 4★</li>
               <li>Navette incluse</li>
             </ul>
-            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta">Acquista →</a>
+            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta an-soon">Apertura a breve !</a>
           </div>
 
           <div className="an-pack">
             <div className="an-pack-dates">19 SET + HOTEL</div>
             <h3 className="an-pack-name"><em>Pit</em><br />Stop</h3>
             <div className="an-pack-tag">Sabato + notte in hotel</div>
-            <div className="an-pack-price">TBD</div>
-            <div className="an-pack-price-sub">Stay Tuned</div>
+            <div className="an-pack-price">€230</div>
+            <div className="an-pack-price-sub">a persona</div>
             <ul className="an-pack-includes">
               <li>Gala all'Autodromo (Monza)</li>
               <li>1 Notte in Hotel 4★ a Monza</li>
               <li>Navette incluse hotel ↔ autodromo</li>
             </ul>
-            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta">Acquista →</a>
+            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta an-soon">Apertura a breve !</a>
           </div>
         </div>
 
@@ -396,42 +396,42 @@ const AperturaNazionale = () => {
             <div className="an-pack-dates">18 SET · UN GIORNO</div>
             <h3 className="an-pack-name">Le mille<br />ed <em>una notte</em></h3>
             <div className="an-pack-tag">Venerdì · Milano</div>
-            <div className="an-pack-price">TBD</div>
-            <div className="an-pack-price-sub">Stay Tuned</div>
+            <div className="an-pack-price">€80</div>
+            <div className="an-pack-price-sub">a persona</div>
             <p className="an-pack-desc">
-              Ingresso ad Agrabah, cena con live show orientale e DJ set esclusivo. Navette di rientro disponibili.<br /><br />
-              <span className="an-pack-desc-muted">Hotel e trasporti non inclusi.</span>
+              Ingresso ad Agrabah, cena con live show orientale e DJ set esclusivo.<br /><br />
+              <span className="an-pack-desc-muted">Hotel e navette non inclusi.<br></br>Le navette sono incluse solo nei pacchetti con pernotto.</span>
             </p>
             <div className="an-pack-guarantee">✓ Prezzo Bloccato</div>
-            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta">Acquista →</a>
+            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta an-soon">Apertura a breve !</a>
           </div>
 
           <div className="an-pack an-pack--singolo">
             <div className="an-pack-dates">19 SET · UN GIORNO</div>
             <h3 className="an-pack-name">Il tempio<br />della <em>velocità</em></h3>
             <div className="an-pack-tag">Sabato · Monza</div>
-            <div className="an-pack-price">TBD</div>
-            <div className="an-pack-price-sub">Stay Tuned</div>
+            <div className="an-pack-price">€155</div>
+            <div className="an-pack-price-sub">a persona</div>
             <p className="an-pack-desc">
-              Tour della pista, aperitivo standing nell'area box, cena di gala 4 portate e DJ set. Navetta inclusa dall'Hotel Falcone.<br /><br />
-              <span className="an-pack-desc-muted">Hotel e trasporti non inclusi.</span>
+              Aperitivo standing nell'area box, cena di gala 4 portate e DJ set.<br /><br />
+              <span className="an-pack-desc-muted">Hotel e navette non inclusi.<br></br>Le navette sono incluse solo nei pacchetti con pernotto.</span>
             </p>
             <div className="an-pack-guarantee">✓ Prezzo Bloccato</div>
-            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta">Acquista →</a>
+            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta an-soon">Apertura a breve !</a>
           </div>
 
           <div className="an-pack an-pack--singolo">
             <div className="an-pack-dates">20 SET · UN GIORNO</div>
             <h3 className="an-pack-name">Un lago<br />di <em>stelle</em></h3>
             <div className="an-pack-tag">Domenica · Sale Marasino</div>
-            <div className="an-pack-price">TBD</div>
-            <div className="an-pack-price-sub">Stay Tuned</div>
+            <div className="an-pack-price">€55</div>
+            <div className="an-pack-price-sub">a persona</div>
             <p className="an-pack-desc">
               Relatore d'eccezione e pranzo conviviale sul Lago d'Iseo.<br /><br />
-              <span className="an-pack-desc-muted">Hotel e trasporti non inclusi.</span>
+              <span className="an-pack-desc-muted">Hotel e navette non inclusi.<br></br>Le navette sono incluse solo nei pacchetti con pernotto.</span>
             </p>
             <div className="an-pack-guarantee">✓ Prezzo Bloccato</div>
-            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta">Acquista →</a>
+            <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-pack-cta an-soon">Apertura a breve !</a>
           </div>
         </div>
 
@@ -537,7 +537,7 @@ const AperturaNazionale = () => {
             Tre giorni per aprire l'anno rotaractiano insieme,
             tra eventi, amicizia e ricordi che resteranno.
           </p>
-          <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-cta-final-btn">Acquista i biglietti →</a>
+          <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-cta-final-btn an-soon">Apertura a breve !</a>
         </div>
       </section>
 
@@ -585,7 +585,7 @@ const AperturaNazionale = () => {
                     ))}
                   </div>
                 </div>
-                <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-mod-cta">Acquista il biglietto →</a>
+                <a href="shop.html?back=apertura-nazionale.html%23pacchetti" className="an-mod-cta an-soon">Apertura a breve !</a>
               </div>
             </div>
           </React.Fragment>
