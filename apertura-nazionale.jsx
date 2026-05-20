@@ -131,6 +131,10 @@ const AperturaNazionale = () => {
       q: 'Entro quando posso iscrivermi?',
       a: 'Le iscrizioni sono aperte fino ad esaurimento posti. Non ci sono aumenti di prezzo last minute: la quota è bloccata. I posti per il sabato a Monza sono limitati a 350.',
     },
+    {
+      q: 'Voglio partecipare a tutte e tre le serate: come acquisto?',
+      a: 'Aggiungi al carrello separatamente i biglietti per Milano, Monza e Iseo, poi procedi al pagamento. I Biglietti Singoli non includono il pernottamento: i Pacchetti sono pensati solo per chi desidera anche l\'hotel.',
+    },
   ];
 
   return (
