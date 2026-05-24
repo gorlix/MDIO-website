@@ -9,21 +9,18 @@ import Header from './components/Header';
 
 const SALES_OPEN = true;
 
+const TT_URL = 'https://www.tickettailor.com/checkout/new-session/id/7914588/chk/054c/?ref=website_widget&show_search_filter=true&show_date_filter=true&show_sort=true';
+
 const TicketTailorWidget = () => {
   const ref = React.useRef(null);
 
   React.useEffect(() => {
     const container = ref.current;
-    if (!container) return;
-
-    const fallback = document.createElement('div');
-    fallback.className = 'tt-widget-fallback';
-    fallback.innerHTML = '<p><a href="https://www.tickettailor.com/checkout/new-session/id/7914588/chk/054c/?ref=website_widget&show_search_filter=true&show_date_filter=true&show_sort=true" target="_blank">Clicca qui per acquistare i biglietti</a></p>';
-    container.appendChild(fallback);
+    if (!container || container.querySelector('script[src*="tickettailor"]')) return;
 
     const script = document.createElement('script');
     script.src = 'https://cdn.tickettailor.com/js/widgets/min/widget.js';
-    script.setAttribute('data-url', 'https://www.tickettailor.com/checkout/new-session/id/7914588/chk/054c/?ref=website_widget&show_search_filter=true&show_date_filter=true&show_sort=true');
+    script.setAttribute('data-url', TT_URL);
     script.setAttribute('data-type', 'inline');
     script.setAttribute('data-inline-minimal', 'false');
     script.setAttribute('data-inline-show-logo', 'true');
@@ -35,7 +32,23 @@ const TicketTailorWidget = () => {
     return () => { container.innerHTML = ''; };
   }, []);
 
-  return <div className="tt-widget" ref={ref} />;
+  return (
+    <div className="tt-widget" ref={ref}>
+      <div className="tt-widget-fallback">
+        <p>
+          <a href={TT_URL} target="_blank" rel="noopener noreferrer">
+            Clicca qui per acquistare i biglietti
+          </a>
+          <br />
+          <small>
+            <a href="https://www.tickettailor.com?rf=wdg_300465" className="tt-widget-powered">
+              Sell tickets online with Ticket Tailor
+            </a>
+          </small>
+        </p>
+      </div>
+    </div>
+  );
 };
 
 const Shop = () => {
