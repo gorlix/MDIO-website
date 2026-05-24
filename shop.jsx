@@ -7,7 +7,7 @@ import CookieBanner from './components/CookieBanner';
 import Footer from './components/Footer';
 import Header from './components/Header';
 
-const SALES_OPEN = false; // ← imposta true il 19/05 per aprire le vendite
+const SALES_OPEN = true;
 
 const TicketTailorWidget = () => {
   const ref = React.useRef(null);
