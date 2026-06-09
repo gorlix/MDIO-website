@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 
 const SALES_OPEN = true;
+const WAVE_PAUSED = true; // ← imposta false per mostrare il widget
 
 const TT_URL = 'https://www.tickettailor.com/checkout/new-session/id/7914588/chk/054c/?ref=website_widget&show_search_filter=true&show_date_filter=true&show_sort=true';
 
@@ -73,13 +74,13 @@ const Shop = () => {
       </div>
     </section>
 
-    {SALES_OPEN ? (
-      <section className="shop-widget-wrap">
+    {SALES_OPEN && (
+      <section className="shop-widget-wrap" style={WAVE_PAUSED ? { display: 'none' } : {}}>
         <TicketTailorWidget />
         <div className="shop-fallback">
           <span>Non vedi nulla?</span>
           <a
-            href="https://www.tickettailor.com/checkout/new-session/id/7914588/chk/054c/?ref=website_widget&show_search_filter=true&show_date_filter=true&show_sort=true"
+            href={TT_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="shop-fallback-link"
@@ -88,16 +89,23 @@ const Shop = () => {
           </a>
         </div>
       </section>
-    ) : (
+    )}
+
+    {(!SALES_OPEN || WAVE_PAUSED) && (
       <section className="shop-soon">
         <div className="shop-soon-inner">
-          <div className="shop-soon-eyebrow">— Apertura vendite</div>
+          <div className="shop-soon-eyebrow">— Prossima wave</div>
           <h2 className="shop-soon-title">
-            Stiamo arrivando.<br /><em>Ti faremo sapere.</em>
+            {WAVE_PAUSED
+              ? <><em>Rimani sintonizzato.</em></>
+              : <>Stiamo arrivando.<br /><em>Ti faremo sapere.</em></>
+            }
           </h2>
           <p className="shop-soon-sub">
-            Le vendite apriranno a breve.<br />
-            Seguici su Instagram per essere il primo a saperlo.
+            {WAVE_PAUSED
+              ? <>Stiamo preparando la prossima wave di biglietti.<br />Seguici sui social per essere il primo a saperlo — l'annuncio arriverà presto.</>
+              : <>Le vendite apriranno a breve.<br />Seguici su Instagram per essere il primo a saperlo.</>
+            }
           </p>
           <a
             href="https://www.instagram.com/multidistrettolombardo/"
